@@ -1,0 +1,142 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+
+    background-color: map-get($colors, 'main-background');
+    border: 1px solid map-get($colors, 'border-color');
+    display: flex;
+
+    &__logo {
+        padding-left: 15px;
+        padding-right: 93px; 
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 46px;
+        margin: 0px;
+    }
+
+    &__link {
+        color: map-get($colors, 'basic-text-color');
+        text-decoration: none;
+        padding-right: 46px;
+        margin: 0px;
+      
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link:hover {
+        color: map-get($colors, 'main-accent');
+    }
+
+    &__link--is-active-agency {
+        position: relative;
+    }
+
+    &__link--is-active-agency::after {
+        content: "";
+        position: absolute;
+      
+        left: 0px;
+        top: 18px;
+      
+        margin-top: 28px;
+        
+        width: 53px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: map-get($colors, 'main-accent');
+    }
+
+    &__link--is-active-portfolio {
+        position: relative;
+    }
+
+    &__link--is-active-portfolio::after {
+        content: "";
+        position: absolute;
+      
+        left: 0px;
+        top: 18px;
+      
+        margin-top: 28px;
+        
+        width: 58px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: map-get($colors, 'main-accent');
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__contact {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-grow: 2;
+        margin: 0px;
+        padding-right: 27px;
+    }
+
+    &__side {
+        padding-left: 50px;
+    }
+
+    &__contact-link {
+        color: map-get($colors, 'primary-text-color');
+        text-decoration: none;
+        padding-right: 46px;
+        margin: 0px;
+      
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__contact-link:hover {
+        color: map-get($colors, 'main-accent');
+    }
+
+    &__contact-link:hover .header__icon {
+        fill: map-get($colors, 'main-accent');
+    }
+
+    &__align-block {
+        display: inline;
+        vertical-align: middle;
+    }
+
+    &__icon {
+        display: inline-block;
+        margin-right: 10px;
+        fill: var(--primary-text-color);
+        vertical-align: middle;
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
