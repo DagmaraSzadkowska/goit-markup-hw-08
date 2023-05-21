@@ -1,24 +1,47 @@
 body {
-    background-color: var(--main-background);
-    color: var(--basic-text-color);
-    font-family: "Roboto", "Raleway", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: auto;
-    letter-spacing: 3%;
-  }
-  
-  ul {
-    list-style: none;
-    padding-inline-start: 0px;
-  }
+  background-color: var(--main-background);
+  color: var(--basic-text-color);
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: auto;
+  letter-spacing: 3%;
 
-.container {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+
+.section {
+  padding: 94px 0;
+  margin: 0px;
+}
+
+
+// ekran monitora
+@media screen and (min-width: 1200px) {
+  .container {
     width: 1200px;
     margin: 0 auto;
   }
-  
-  .section {
-    padding: 94px 0;
-    margin: 0px;
+}
+
+// ekran tabletu
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
   }
+}
+
+// ekran telefonu
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
       rel="stylesheet"
@@ -58,6 +59,25 @@
           </li>
         </ul>
       </div>
+
+      <div class="mobile-header">
+        <div class="header__logo">
+          <a href="index.html" class="logo">
+            <span class="logo__accent">Web</span>Studio</a
+          >
+        </div>
+
+        <button 
+          class="mobile-header__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          
+          <svg class="mobile-header__button-icon" width="24px" height="16px">
+            <use href="./images/menu.svg#menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+
     </header>
 
     <main>
@@ -134,8 +154,8 @@
       <section class="section description">
         <div class="container">
           <ul class="features">
-            <li class="features__card">
-              <article>
+            <li>
+              <article class="features__card">
                 <div class="features__icon">
                   <svg class="logo" width="70" height="70">
                     <use href="./images/icons.svg#icon-antenna-1"></use>
@@ -145,12 +165,12 @@
                 <p class="features__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Asperiores molestias illum cum eligendi animi provident quis
-                  dicta reprehenderit nulla ad.
+                  dicta.
                 </p>
               </article>
             </li>
-            <li class="features__card">
-              <article>
+            <li>
+              <article class="features__card">
                 <div class="features__icon">
                   <svg class="logo" width="70" height="70">
                     <use href="./images/icons.svg#icon-clock-1"></use>
@@ -160,12 +180,12 @@
                 <p class="features__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Asperiores molestias illum cum eligendi animi provident quis
-                  dicta reprehenderit nulla ad.
+                  dicta.
                 </p>
               </article>
             </li>
-            <li class="features__card">
-              <article>
+            <li>
+              <article class="features__card">
                 <div class="features__icon">
                   <svg class="logo" width="70" height="70">
                     <use href="./images/icons.svg#icon-diagram-1"></use>
@@ -175,12 +195,12 @@
                 <p class="features__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Asperiores molestias illum cum eligendi animi provident quis
-                  dicta reprehenderit nulla ad.
+                  dicta.
                 </p>
               </article>
             </li>
-            <li class="features__card">
-              <article>
+            <li>
+              <article class="features__card">
                 <div class="features__icon">
                   <svg class="logo" width="70" height="70">
                     <use href="./images/icons.svg#icon-astronaut-1"></use>
@@ -190,7 +210,7 @@
                 <p class="features__text">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Asperiores molestias illum cum eligendi animi provident quis
-                  dicta reprehenderit nulla ad.
+                  dicta.
                 </p>
               </article>
             </li>
@@ -202,7 +222,8 @@
               <li class="showcase__photo">
                 <div class="showcase__thumb">
                   <img
-                    src="images/box_1.jpg"
+                    src="images/feature_1.jpg"
+                    srcset="images/feature_1@2x.jpg 2x"
                     alt="Programista piszący kod."
                     width="370"
                     height="294"
@@ -216,7 +237,8 @@
               <li class="showcase__photo">
                 <div class="showcase__thumb">
                 <img
-                  src="images/box_2.jpg"
+                  src="images/feature_2.jpg"
+                  srcset="images/feature_2@2x.jpg 2x"
                   alt="Osoba, która odbiera telefon."
                   width="370"
                   height="294"
@@ -229,7 +251,8 @@
               <li class="showcase__photo">
                 <div class="showcase__thumb">
                 <img
-                  src="images/box_3.jpg"
+                  src="images/feature_3.jpg"
+                  srcset="images/feature_3@2x.jpg 2x"
                   alt="Designer wybierający kolor z palety."
                   width="370"
                   height="294"
@@ -252,7 +275,8 @@
               <div class="team__card">
                 <figure class="team__member">
                   <img
-                    src="images/img_1.jpg"
+                    src="images/team_1.jpg"
+                    srcset="images/team_1@2x.jpg 2x"
                     alt="Brunet z brodą i w bordowej koszuli."
                     width="270"
                     height="260"
@@ -307,7 +331,8 @@
               <div class="team__card">
                 <figure class="team__member">
                   <img
-                    src="images/img_2.jpg"
+                    src="images/team_2.jpg"
+                    srcset="images/team_2@2x.jpg 2x"
                     alt="Blondynka w okularach i czarnym żakiecie."
                     width="270"
                     height="260"
@@ -362,7 +387,8 @@
               <div class="team__card">
                 <figure class="team__member">
                   <img
-                    src="images/img_3.jpg"
+                    src="images/team_3.jpg"
+                    srcset="images/team_3@2x.jpg 2x"
                     alt="Uśmiechnięty mężczyzna w błękitnej koszuli."
                     width="270"
                     height="260"
@@ -417,7 +443,8 @@
               <div class="team__card">
                 <figure class="team__member">
                   <img
-                    src="images/img_4.jpg"
+                    src="images/team_4.jpg"
+                    srcset="images/team_4@2x.jpg 2x"
                     alt="Brunet w okularach i czarnej koszulce."
                     width="270"
                     height="260"
@@ -605,8 +632,93 @@
           </form>
         </div>
       </div>
+
+      <div class="mobile-newsletter">
+        <form name="mobile-newsletter-form">
+
+          <label for="user_email" class="mobile-newsletter__title">
+            Zapisz się do newslettera
+          </label>
+
+          <div class="mobile-newsletter__form">
+            <input id="user_email" type="email" name="email" placeholder="E-mail" class="mobile-newsletter__input">
+
+            <button type="submit" class="mobile-newsletter__button">
+              Zapisz się
+              <svg width="24px" height="24px" class="mobile-newsletter__icon">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
     </footer>
 
-    <script src="./js/modal.js"></script>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="black"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="mobile-menu__navigation">
+          <li><a href="" class="mobile-menu__navigation-link">Agencja</a></li>
+          <li><a href="" class="mobile-menu__navigation-link">Portfolio</a></li>
+          <li><a href="" class="mobile-menu__navigation-link">Kontakt</a></li>
+        </ul>
+
+        <ul class="mobile-menu__contact">
+          <li>
+             <a href="tel:+48111111111" class="mobile-menu__tel">
+              +48 111 111 111
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@example.com" class="mobile-menu__mail">
+              info@devstudio.com
+            </a>
+         </li>
+        </ul>
+
+        <ul class="mobile-menu__socials">
+          <li>
+            <a href="" class="mobile-menu__social-link">Instagram</a>
+          </li>
+          <li class="mobile-menu__socials-accent">
+            |
+          </li>
+          <li>
+            <a href="" class="mobile-menu__social-link">Twitter</a>
+          </li>
+          <li class="mobile-menu__socials-accent">
+            |
+          </li>
+          <li>
+            <a href="" class="mobile-menu__social-link">Facebook</a>
+          </li>
+          <li class="mobile-menu__socials-accent">
+            |
+          </li>
+          <li>
+            <a href="" class="mobile-menu__social-link">LinkedIn</a>
+          </li>
+        </ul>
+    </div>
+
+    <script src="js/modal.js"></script>
+
+    <script src="js/mobile-menu.js"></script>
+
   </body>
 </html>

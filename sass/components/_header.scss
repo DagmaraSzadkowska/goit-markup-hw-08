@@ -1,9 +1,6 @@
-.container {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
+// ekran monitora
+@media screen and (min-width: 1200px) {
+  .header {
     width: 100%;
     height: 80px;
 
@@ -12,131 +9,474 @@
     font-weight: 500;
     letter-spacing: 0.2px;
 
-    background-color: map-get($colors, 'main-background');
-    border: 1px solid map-get($colors, 'border-color');
+    background-color: map-get($colors, "main-background");
+    border: 1px solid map-get($colors, "border-color");
     display: flex;
 
     &__logo {
-        padding-left: 15px;
-        padding-right: 93px; 
+      padding-left: 15px;
+      padding-right: 93px;
     }
 
     &__navigation {
-        display: flex;
-        align-items: flex-start;
-        padding-right: 46px;
-        margin: 0px;
+      display: flex;
+      align-items: flex-start;
+      padding-right: 46px;
+      margin: 0px;
     }
 
     &__link {
-        color: map-get($colors, 'basic-text-color');
-        text-decoration: none;
-        padding-right: 46px;
-        margin: 0px;
-      
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-delay: 0ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      color: map-get($colors, "basic-text-color");
+      text-decoration: none;
+      padding-right: 46px;
+      margin: 0px;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__link:hover {
-        color: map-get($colors, 'main-accent');
+      color: map-get($colors, "main-accent");
     }
 
     &__link--is-active-agency {
-        position: relative;
+      position: relative;
     }
 
     &__link--is-active-agency::after {
-        content: "";
-        position: absolute;
-      
-        left: 0px;
-        top: 18px;
-      
-        margin-top: 28px;
-        
-        width: 53px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: map-get($colors, 'main-accent');
+      content: "";
+      position: absolute;
+
+      left: 0px;
+      top: 17px;
+
+      margin-top: 28px;
+
+      width: 53px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: map-get($colors, "main-accent");
     }
 
     &__link--is-active-portfolio {
-        position: relative;
+      position: relative;
     }
 
     &__link--is-active-portfolio::after {
-        content: "";
-        position: absolute;
-      
-        left: 0px;
-        top: 18px;
-      
-        margin-top: 28px;
-        
-        width: 58px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: map-get($colors, 'main-accent');
+      content: "";
+      position: absolute;
+
+      left: 0px;
+      top: 17px;
+
+      margin-top: 28px;
+
+      width: 58px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: map-get($colors, "main-accent");
     }
 
     &__content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: 24px;
-        padding-bottom: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      padding-bottom: 25px;
     }
 
     &__contact {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-grow: 2;
-        margin: 0px;
-        padding-right: 27px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-grow: 2;
+      margin: 0px;
+      padding-right: 27px;
     }
 
     &__side {
-        padding-left: 50px;
+      padding-left: 50px;
     }
 
     &__contact-link {
-        color: map-get($colors, 'primary-text-color');
-        text-decoration: none;
-        padding-right: 46px;
-        margin: 0px;
-      
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-delay: 0ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      color: map-get($colors, "primary-text-color");
+      text-decoration: none;
+      padding-right: 46px;
+      margin: 0px;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__contact-link:hover {
-        color: map-get($colors, 'main-accent');
+      color: map-get($colors, "main-accent");
     }
 
     &__contact-link:hover .header__icon {
-        fill: map-get($colors, 'main-accent');
+      fill: map-get($colors, "main-accent");
     }
 
     &__align-block {
-        display: inline;
-        vertical-align: middle;
+      display: inline;
+      vertical-align: middle;
     }
 
     &__icon {
-        display: inline-block;
-        margin-right: 10px;
-        fill: var(--primary-text-color);
-        vertical-align: middle;
+      display: inline-block;
+      margin-right: 10px;
+      fill: var(--primary-text-color);
+      vertical-align: middle;
 
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-delay: 0ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+
+  .mobile-menu,
+  .menu-toggle,
+  .mobile-header {
+    display: none;
+  }
+}
+
+// ekran tabletu
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header {
+        width: 100%;
+        height: 80px;
+    
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+    
+        background-color: map-get($colors, "main-background");
+        border: 1px solid map-get($colors, "border-color");
+        display: flex;
+    
+        &__logo {
+          padding-left: 15px;
+          padding-right: 83px;
+        }
+    
+        &__navigation {
+          width: 282px;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          margin: 0px;
+        }
+    
+        &__link {
+          color: map-get($colors, "basic-text-color");
+          text-decoration: none;
+          margin: 0px;
+    
+          transition-property: color;
+          transition-duration: 250ms;
+          transition-delay: 0ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__link:hover {
+          color: map-get($colors, "main-accent");
+        }
+    
+        &__link--is-active-agency {
+          position: relative;
+        }
+    
+        &__link--is-active-agency::after {
+          content: "";
+          position: absolute;
+    
+          left: 0px;
+          top: 17px;
+    
+          margin-top: 28px;
+    
+          width: 53px;
+          height: 4px;
+          border-radius: 2px;
+          background-color: map-get($colors, "main-accent");
+        }
+    
+        &__link--is-active-portfolio {
+          position: relative;
+        }
+    
+        &__link--is-active-portfolio::after {
+          content: "";
+          position: absolute;
+    
+          left: 0px;
+          top: 17px;
+    
+          margin-top: 28px;
+    
+          width: 58px;
+          height: 4px;
+          border-radius: 2px;
+          background-color: map-get($colors, "main-accent");
+        }
+    
+        &__content {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+    
+        &__contact {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-right: 15px;
+        }
+    
+        &__side {
+          padding-left: 50px;
+        }
+    
+        &__contact-link {
+          color: map-get($colors, "primary-text-color");
+          text-decoration: none;
+    
+          transition-property: color;
+          transition-duration: 250ms;
+          transition-delay: 0ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__contact-link:hover {
+          color: map-get($colors, "main-accent");
+        }
+    
+        &__contact-link:hover .header__icon {
+          fill: map-get($colors, "main-accent");
+        }
+    
+        &__align-block {
+          display: inline;
+          vertical-align: middle;
+        }
+    
+        &__icon {
+          display: inline-block;
+          margin-right: 10px;
+          fill: var(--primary-text-color);
+          vertical-align: middle;
+    
+          transition-property: fill;
+          transition-duration: 250ms;
+          transition-delay: 0ms;
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      }
+
+      .mobile-menu,
+      .menu-toggle,
+      .mobile-header {
+        display: none;
+      }
+}
+
+// ekran telefonu
+@media screen and (max-width: 767px) {
+    .header__content {
+        display: none;
+    }
+    
+    .header__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .mobile-header {
+        padding: 16px 15px;
+        display: flex;
+        justify-content: space-between;
+
+        &__button {
+            padding: 12px 8px;
+            background-color: map-get($colors, "main-background");
+            border: none;
+            width: 40px;
+            height: 40px;
+        }
+
+        &__button-icon {
+            fill: map-get($colors, "basic-text-color");
+
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__button-icon:hover{
+          fill: map-get($colors, "main-accent");
+        }
+    }
+
+    .menu-toggle {
+      min-height: 40px;
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: map-get($colors , "main-background" );
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__navigation li {
+      margin-bottom: 36px;
+    }
+
+    &__navigation-link {
+      text-decoration: none;
+      color: map-get($colors , "basic-text-color");
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.17;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__navigation-link:hover {
+      color: map-get($colors , "main-accent");
+    }
+
+    &__contact {
+      margin-top: 302px;
+    }
+
+    &__contact li {
+      margin-bottom: 32px;
+    }
+
+    &__tel {
+      text-decoration: none;
+      color: map-get($colors , "main-accent");
+      font-size: 34px;
+      font-weight: 500;
+      line-height: 1.17;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__tel:hover {
+      color: map-get($colors , "main-accent-hover");
+    }
+
+    &__mail {
+      text-decoration: none;
+      color: map-get($colors , "primary-text-color");
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.17;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__mail:hover {
+      color: map-get($colors , "main-accent");
+    }
+
+    &__socials {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &__social-link {
+      text-decoration: none;
+      color: map-get($colors , "main-accent");
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.22;
+
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-delay: 0ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__social-link:hover {
+      color: map-get($colors , "main-accent-hover");
+    }
+
+    &__socials-accent {
+      font-size: 22px;
+      color: map-get($colors , "icons-color")
+    }
+
+
+
+
+  }
+  
+  
+
 }
