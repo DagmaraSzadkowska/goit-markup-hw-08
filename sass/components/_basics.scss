@@ -1,26 +1,27 @@
-body {
-  background-color: var(--main-background);
-  color: var(--basic-text-color);
-  font-family: "Roboto", "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: auto;
-  letter-spacing: 3%;
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  body {
+    background-color: var(--main-background);
+    color: var(--basic-text-color);
+    font-family: "Roboto", "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 3%;
 
-  overflow-x: hidden;
+    overflow-x: hidden;
+  }
 }
+
 
 ul {
   list-style: none;
   padding-inline-start: 0px;
 }
 
-
 .section {
   padding: 94px 0;
   margin: 0px;
 }
-
 
 // ekran monitora
 @media screen and (min-width: 1200px) {
@@ -39,9 +40,10 @@ ul {
 }
 
 // ekran telefonu
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 480px;
     margin: 0 auto;
   }
 }
+

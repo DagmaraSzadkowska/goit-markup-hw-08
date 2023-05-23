@@ -12,7 +12,11 @@
     height: 100%;
     background: map-get($colors, 'modal-shadow');
   
-    z-index: 1;    
+    z-index: 1;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .is-hidden {
@@ -24,7 +28,6 @@
 }
 
 .modal {
-    margin: 221px auto;
   
     width: 528px;
     height: 581px;
@@ -32,8 +35,6 @@
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-  
-    transform: translate(0%, 0%) scale(1);
   
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -273,7 +274,11 @@ transform: scale(0.5);
         height: 100%;
         background: map-get($colors, 'modal-shadow');
       
-        z-index: 1;    
+        z-index: 1; 
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .is-hidden {
@@ -285,16 +290,12 @@ transform: scale(0.5);
     }
     
     .modal {
-        margin: 221px auto;
-      
         width: 450px;
         height: 609px;
       
         background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
-      
-        transform: translate(0%, -10%) scale(1);
       
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
@@ -525,7 +526,7 @@ transform: scale(0.5);
 }
 
 // ekran telefonu
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .backdrop {
         visibility: visible;
         position: fixed;
@@ -536,7 +537,11 @@ transform: scale(0.5);
         height: 100%;
         background: map-get($colors, 'modal-shadow');
       
-        z-index: 1;    
+        z-index: 1;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .is-hidden {
@@ -548,8 +553,6 @@ transform: scale(0.5);
     }
     
     .modal {
-        margin: 221px auto;
-      
         width: 450px;
         height: 609px;
       
@@ -557,7 +560,270 @@ transform: scale(0.5);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
       
-        transform: translate(0%, -20%) scale(1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+        &__button {
+            position: relative;
+            top: 8px;
+            right: -202px;
+          
+            width: 30px;
+            height: 30px;
+          
+            padding: 0px;
+          
+            background: map-get($colors, 'main-background');
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+        }
+    
+        &__button-icon {
+            display: block;
+            margin: auto;
+        }
+    
+        &__title {
+            text-align: center;
+            width: 270px;
+            color: map-get($colors, 'basic-text-color');
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 30px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    
+    .is-hidden .modal {
+    transform: scale(0.5);
+    }
+    
+    .form {
+        margin: 12px 40px;
+    
+        &__label {
+            color: map-get($colors, 'primary-text-color');
+            margin: 0px;
+            text-align: left;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16;
+        }
+    
+        &__short-input {
+            display: inline-flex;
+            align-content: center;
+            width: 370px;
+            height: 40px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+          
+            transition-property: border-color;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__short-input:hover,
+        &__short-input:focus-within,
+        &__short-input:active {
+          border-color: map-get($colors, 'main-accent-hover');
+        }
+    
+        &__icon {
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__short-input:hover &__icon,
+        &__short-input:focus-within &__icon,
+        &__short-input:active &__icon {
+            fill: map-get($colors, 'main-accent');
+        }
+    
+        &__comment-input {
+            width: 370px;
+            height: 120px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            margin-top: 4px;
+            margin-bottom: 20px;
+            padding: 12px 0 0 16px;
+            outline: none;
+          
+            transition-property: border-color;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__comment-input:hover,
+        &__comment-input:focus-within,
+        &__comment-input:active  {
+            border-color: map-get($colors, 'main-accent-hover');
+        }
+    
+        &__icon {
+            display: block;
+            margin: 11px;
+            fill: map-get($colors, 'basic-text-color');
+        }
+    
+        &__input {
+            height: 40px;
+            width: 437px;
+            padding: 0px;
+          
+            border: none;
+            outline: none;
+            background: none;
+        } 
+    
+        &__comment-area::placeholder {
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+          
+        &__comment-area:hover::placeholder,
+        &__comment-area:focus-within::placeholder,
+        &__comment-area:active::placeholder {
+            color: map-get($colors, 'main-accent');
+        }
+    }
+    
+    .checkbox {
+        margin: 0 15px 30px 15px;
+        
+        &__container {
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            width: 400px;
+            margin: 0 auto;
+            
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-delay: 0ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        &__container:hover,
+        &__container:focus,
+        &__container:active {
+            fill: map-get($colors, 'main-accent');
+        }
+    
+        &__input {
+            display: block;
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            width: 0px;
+            height: 0px; 
+        }
+    
+        &__icon-before {
+            position: absolute;
+            margin-top: 3px;
+        }
+    
+        &__input:checked ~ &__icon-before {
+            visibility: none;
+            fill: map-get($colors, 'main-accent');
+        }
+    
+        &__icon-after {
+            position: absolute;
+            visibility: hidden;
+            margin-top: 3px;
+        }
+    
+        &__input:checked ~ &__icon-after {
+            visibility: visible;
+        }
+    
+        &__agreement {
+            margin: 0 0 0 24px;
+            padding: 0px;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.71;
+            color: map-get($colors, 'primary-text-color');
+        }
+    
+        &__agreement-link {
+            color: map-get($colors, 'main-accent');
+        }
+    }
+    
+    .form-button {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        color: map-get($colors, 'secondary-text-color');
+      
+        width: 200px;
+        height: 50px;
+      
+        border: none;
+        background: map-get($colors, 'main-accent');
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+      
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-delay: 0ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            background-color: map-get($colors, 'main-accent-hover');
+        } 
+    }
+}
+
+// mały ekran
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .backdrop {
+        visibility: visible;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      
+        width: 100%;
+        height: 100%;
+        background: map-get($colors, 'modal-shadow');
+      
+        z-index: 1;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+        
+        transform: scale(0.5);
+    }
+    
+    .modal {
+        width: 450px;
+        height: 609px;
+      
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+
+        transform: scale(0.5);
       
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
