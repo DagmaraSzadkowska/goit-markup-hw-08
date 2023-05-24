@@ -126,68 +126,7 @@
 }
 
 // ekran telefonu
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .clients {
-    background-color: map-get($colors, "main-background");
-
-    &__title {
-      color: map-get($colors, "basic-text-color");
-      margin: 0px auto 30px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.17;
-    }
-
-    &__cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 0;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-    }
-
-    &__card {
-      border: 1px solid map-get($colors, "icons-color");
-      fill: map-get($colors, "icons-color");
-      border-radius: 4px;
-      cursor: pointer;
-
-      transition-property: border-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__card:hover,
-    &__card:focus,
-    &__card:active {
-      border-color: map-get($colors, "main-accent");
-      fill: map-get($colors, "main-accent");
-    }
-
-    &__logo {
-      display: block;
-      margin: 16px 32px;
-
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__logo:hover,
-    &__logo:focus,
-    &__logo:active {
-      fill: map-get($colors, "main-accent");
-    }
-  }
-}
-
-// mały ekran
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 767px) {
   .clients {
     background-color: map-get($colors, "main-background");
 
