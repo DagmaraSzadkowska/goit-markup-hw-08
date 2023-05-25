@@ -91,28 +91,39 @@
 //ekran tabletu
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .description {
+    width: 100%;
+    max-width: 768px;
     background-color: map-get($colors, "main-background");
+    margin: 30px auto;
     padding: 0;
-    margin: 0;
   }
 
   .features {
+    margin: 0 15px;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
     gap: 30px;
-    margin: 0 auto;
 
     &__card {
-      width: 354px;
-      height: 251px;
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      max-width: 354px;
     }
 
     &__icon {
+      height: 120px;
+
       background-color: map-get($colors, "medium-background");
       border-radius: 4px;
-      width: 354px;
-      height: 120px;
+
       margin-bottom: 30px;
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -120,16 +131,17 @@
 
     &__title {
       text-transform: uppercase;
+      text-align: center;
       font-size: 14px;
       line-height: 1.14;
-      margin: 0px 0px 10px;
+      margin-bottom: 10px;
     }
 
     &__text {
       color: map-get($colors, "primary-text-color");
       font-size: 14px;
       line-height: 1.71;
-      margin: 0px;
+      margin: 0;
     }
   }
 
@@ -141,14 +153,15 @@
 // ekran telefonu
 @media screen and (max-width: 767px) {
   .description {
+    width: 100%;
+    max-width: 480px;
     background-color: map-get($colors, "main-background");
     margin: 30px auto;
     padding: 0;
   }
 
   .features {
-    width: 100%;
-    margin: 0 auto;
+    margin: 0 15px;
 
     display: flex;
     flex-direction: column;
@@ -166,8 +179,6 @@
     }
 
     &__icon {
-      width: 100%;
-      max-width: 450px;
       height: 120px;
 
       background-color: map-get($colors, "medium-background");
@@ -181,16 +192,14 @@
     }
 
     &__title {
-      max-width: 450px;
       text-transform: uppercase;
       text-align: center;
       font-size: 14px;
       line-height: 1.14;
-      margin: 0px 0px 10px;
+      margin-bottom: 10px;
     }
 
     &__text {
-      max-width: 450px;
       color: map-get($colors, "primary-text-color");
       font-size: 14px;
       line-height: 1.71;

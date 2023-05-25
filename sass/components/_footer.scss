@@ -8,6 +8,7 @@
       padding-top: 60px;
       padding-bottom: 60px;
       display: flex;
+      justify-content: center;
     }
   }
 
@@ -180,10 +181,14 @@
     padding-bottom: 60px;
 
     &__content {
-      width: 768px;
+      width: 100%;
+      max-width: 768px;
       padding: 60px 0;
+      margin: 0 auto;
+
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
+      gap: 144px;
     }
   }
 
@@ -310,7 +315,7 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
 
-      width: 358px;
+      width: 450px;
       height: 50px;
       padding: 15px 16px;
       margin-top: 20px;
@@ -356,25 +361,27 @@
 // ekran telefonu
 @media screen and (max-width: 767px) {
   .footer {
-      background-color: map-get($colors, "dark-background");
-      color: map-get($colors, "secondary-text-color");
-      padding-bottom: 60px;
-      
-      &__content {
-        width: 480px;
-        padding: 60px 0;
+    background-color: map-get($colors, "dark-background");
+    color: map-get($colors, "secondary-text-color");
+    padding-bottom: 60px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    &__content {
+      width: 100%;
+      max-width: 768px;
+      padding: 60px 0;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 60px;
     }
   }
 
   .footer-main {
     text-align: center;
-    margin: 0 0 60px 0;
-
+    
     &__logo {
       margin-bottom: 20px;
     }
@@ -430,7 +437,6 @@
     &__socials {
       display: flex;
       gap: 10px;
-      justify-content: center;
       list-style: none;
       margin: 0px;
     }
@@ -470,15 +476,8 @@
   }
 
   .mobile-newsletter {
-    display: flex;
-    justify-content: center;
     text-align: center;
-
-    &__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    margin: 0 5px;
 
     &__title {
       text-transform: uppercase;
@@ -486,7 +485,7 @@
       font-size: 14px;
       line-height: 1.14;
       align-self: flex-start;
-      margin: 12px 0 20px;
+      margin: 0 auto 20px auto;
     }
 
     &__input {
@@ -496,7 +495,8 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
 
-      width: 358px;
+      width: 100%;
+      max-width: 450px;
       height: 50px;
       padding: 15px 16px;
       margin-top: 20px;
@@ -518,7 +518,7 @@
       line-height: 1.87;
 
       padding: 10px 28px 10px 42px;
-      margin: 20px 0 0 0;
+      margin: 20px auto 0;
 
       transition-property: background-color;
       transition-duration: 250ms;
