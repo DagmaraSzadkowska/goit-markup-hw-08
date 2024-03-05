@@ -1,0 +1,49 @@
+$breakpoints: (
+    'extra-small': 0,
+    'small': 568px,
+    'medium': 768px,
+    'large': 992px,
+    'extra-large': 1200px,
+);
+
+@mixin screen($size) {
+    $width: map-get($breakpoints, $size);
+    $query: 'min-width: #{$width}';
+
+    @media screen and ($query) {
+        @content;
+    }
+}
+
+$font-family: (
+    'roboto': 'Roboto, sans-serif',
+    'raleway': 'Raleway',
+);
+
+$font-weights: (
+    'regular': 400,
+    'medium': 500,
+    'semi-bold': 600,
+    'bold': 700,
+);
+
+$font-sizes: (
+    '12': 0.75rem,
+    '14': 0.875rem,
+    '16': 1rem,
+    '18': 1.125rem,
+    '24': 1.5rem,
+    '26': 1.625rem,
+    '34': 2.125rem,
+    '40': 2.5rem,
+);
+
+@mixin font($family, $size, $weight) {
+    $family: map-get($font-family, $family);
+    $size: map-get($font-sizes, $size);
+    $weight: map-get($font-weights, $weight);
+
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+};
