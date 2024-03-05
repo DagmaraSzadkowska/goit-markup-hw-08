@@ -11,7 +11,7 @@
   
     width: 100%;
     height: 100%;
-    background: map-get($colors, 'modal-shadow');
+    background: var(--modal-shadow);
   
     z-index: 1;
     
@@ -49,7 +49,7 @@
       
         padding: 0px;
       
-        background: map-get($colors, 'main-background');
+        background: var(--main-background);
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
     }
@@ -60,7 +60,7 @@
     }
 
     &__title {
-        color: map-get($colors, 'basic-text-color');
+        color: var(--basic-text-color);
         font-size: 20px;
         font-weight: 700;
         line-height: 23px;
@@ -77,7 +77,7 @@ transform: scale(0.5);
     margin: 12px 40px;
 
     &__label {
-        color: map-get($colors, 'primary-text-color');
+        color: var(--primary-text-color);
         margin: 0px;
         text-align: left;
         font-weight: 400;
@@ -104,7 +104,7 @@ transform: scale(0.5);
     &__short-input:hover,
     &__short-input:focus-within,
     &__short-input:active {
-      border-color: map-get($colors, 'main-accent-hover');
+      border-color: var(--main-accent-hover);
     }
 
     &__icon {
@@ -117,7 +117,7 @@ transform: scale(0.5);
     &__short-input:hover &__icon,
     &__short-input:focus-within &__icon,
     &__short-input:active &__icon {
-        fill: map-get($colors, 'main-accent');
+        fill: var(--main-accent);
     }
 
     &__comment-input {
@@ -139,13 +139,13 @@ transform: scale(0.5);
     &__comment-input:hover,
     &__comment-input:focus-within,
     &__comment-input:active  {
-        border-color: map-get($colors, 'main-accent-hover');
+        border-color: var(--main-accent-hover);
     }
 
     &__icon {
         display: block;
         margin: 11px;
-        fill: map-get($colors, 'basic-text-color');
+        fill: var(--basic-text-color);
     }
 
     &__input {
@@ -168,7 +168,7 @@ transform: scale(0.5);
     &__comment-area:hover::placeholder,
     &__comment-area:focus-within::placeholder,
     &__comment-area:active::placeholder {
-        color: map-get($colors, 'main-accent');
+        color: var(--main-accent);
     }
 }
 
@@ -191,7 +191,7 @@ transform: scale(0.5);
     &__container:hover,
     &__container:focus,
     &__container:active {
-        fill: map-get($colors, 'main-accent');
+        fill: var(--main-accent);
     }
 
     &__input {
@@ -210,7 +210,7 @@ transform: scale(0.5);
 
     &__input:checked ~ &__icon-before {
         visibility: none;
-        fill: map-get($colors, 'main-accent');
+        fill: var(--main-accent);
     }
 
     &__icon-after {
@@ -229,11 +229,11 @@ transform: scale(0.5);
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
-        color: map-get($colors, 'primary-text-color');
+        color: var(--primary-text-color);
     }
 
     &__agreement-link {
-        color: map-get($colors, 'main-accent');
+        color: var(--main-accent);
     }
 }
 
@@ -241,13 +241,13 @@ transform: scale(0.5);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    color: map-get($colors, 'secondary-text-color');
+    color: var(--secondary-text-color);
   
     width: 200px;
     height: 50px;
   
     border: none;
-    background: map-get($colors, 'main-accent');
+    background: var(--main-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
   
@@ -258,7 +258,7 @@ transform: scale(0.5);
 
     &:hover,
     &:focus {
-        background-color: map-get($colors, 'main-accent-hover');
+        background-color: var(--main-accent-hover);
     } 
 }
 }
@@ -273,7 +273,7 @@ transform: scale(0.5);
       
         width: 100%;
         height: 100%;
-        background: map-get($colors, 'modal-shadow');
+        background: var(--modal-shadow);
       
         z-index: 1; 
         
@@ -310,7 +310,7 @@ transform: scale(0.5);
           
             padding: 0px;
           
-            background: map-get($colors, 'main-background');
+            background: var(--main-background);
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 50%;
         }
@@ -323,7 +323,7 @@ transform: scale(0.5);
         &__title {
             text-align: center;
             width: 270px;
-            color: map-get($colors, 'basic-text-color');
+            color: var(--basic-text-color);
             font-size: 20px;
             font-weight: 700;
             line-height: 30px;
@@ -340,7 +340,7 @@ transform: scale(0.5);
         margin: 12px 40px;
     
         &__label {
-            color: map-get($colors, 'primary-text-color');
+            color: var(--primary-text-color);
             margin: 0px;
             text-align: left;
             font-weight: 400;
@@ -367,7 +367,7 @@ transform: scale(0.5);
         &__short-input:hover,
         &__short-input:focus-within,
         &__short-input:active {
-          border-color: map-get($colors, 'main-accent-hover');
+          border-color: var(--main-accent-hover);
         }
     
         &__icon {
@@ -380,7 +380,7 @@ transform: scale(0.5);
         &__short-input:hover &__icon,
         &__short-input:focus-within &__icon,
         &__short-input:active &__icon {
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__comment-input {
@@ -402,13 +402,13 @@ transform: scale(0.5);
         &__comment-input:hover,
         &__comment-input:focus-within,
         &__comment-input:active  {
-            border-color: map-get($colors, 'main-accent-hover');
+            border-color: var(--main-accent-hover);
         }
     
         &__icon {
             display: block;
             margin: 11px;
-            fill: map-get($colors, 'basic-text-color');
+            fill: var(--basic-text-color);
         }
     
         &__input {
@@ -431,7 +431,7 @@ transform: scale(0.5);
         &__comment-area:hover::placeholder,
         &__comment-area:focus-within::placeholder,
         &__comment-area:active::placeholder {
-            color: map-get($colors, 'main-accent');
+            color: var(--main-accent);
         }
     }
     
@@ -454,7 +454,7 @@ transform: scale(0.5);
         &__container:hover,
         &__container:focus,
         &__container:active {
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__input {
@@ -473,7 +473,7 @@ transform: scale(0.5);
     
         &__input:checked ~ &__icon-before {
             visibility: none;
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__icon-after {
@@ -492,11 +492,11 @@ transform: scale(0.5);
             font-weight: 400;
             font-size: 12px;
             line-height: 1.71;
-            color: map-get($colors, 'primary-text-color');
+            color: var(--primary-text-color);
         }
     
         &__agreement-link {
-            color: map-get($colors, 'main-accent');
+            color: var(--main-accent);
         }
     }
     
@@ -504,13 +504,13 @@ transform: scale(0.5);
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        color: map-get($colors, 'secondary-text-color');
+        color: var(--secondary-text-color);
       
         width: 200px;
         height: 50px;
       
         border: none;
-        background: map-get($colors, 'main-accent');
+        background: var(--main-accent);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
       
@@ -521,7 +521,7 @@ transform: scale(0.5);
     
         &:hover,
         &:focus {
-            background-color: map-get($colors, 'main-accent-hover');
+            background-color: var(--main-accent-hover);
         } 
     }
 }
@@ -537,7 +537,7 @@ transform: scale(0.5);
       
         width: 100%;
         height: 100%;
-        background: map-get($colors, 'modal-shadow');
+        background: var(--modal-shadow);
       
         z-index: 1;
         
@@ -576,7 +576,7 @@ transform: scale(0.5);
           
             padding: 0px;
           
-            background: map-get($colors, 'main-background');
+            background: var(--main-background);
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 50%;
         }
@@ -589,7 +589,7 @@ transform: scale(0.5);
         &__title {
             text-align: center;
             max-width: 270px;
-            color: map-get($colors, 'basic-text-color');
+            color: var(--basic-text-color);
             font-size: 20px;
             font-weight: 700;
             line-height: 30px;
@@ -606,7 +606,7 @@ transform: scale(0.5);
         margin: 12px 40px;
     
         &__label {
-            color: map-get($colors, 'primary-text-color');
+            color: var(--primary-text-color);
             margin: 0px;
             text-align: left;
             font-weight: 400;
@@ -634,7 +634,7 @@ transform: scale(0.5);
         &__short-input:hover,
         &__short-input:focus-within,
         &__short-input:active {
-          border-color: map-get($colors, 'main-accent-hover');
+          border-color: var(--main-accent-hover);
         }
     
         &__icon {
@@ -647,7 +647,7 @@ transform: scale(0.5);
         &__short-input:hover &__icon,
         &__short-input:focus-within &__icon,
         &__short-input:active &__icon {
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__comment-input {
@@ -670,13 +670,13 @@ transform: scale(0.5);
         &__comment-input:hover,
         &__comment-input:focus-within,
         &__comment-input:active  {
-            border-color: map-get($colors, 'main-accent-hover');
+            border-color: var(--main-accent-hover);
         }
     
         &__icon {
             display: block;
             margin: 11px;
-            fill: map-get($colors, 'basic-text-color');
+            fill: var(--basic-text-color);
         }
     
         &__input {
@@ -699,7 +699,7 @@ transform: scale(0.5);
         &__comment-area:hover::placeholder,
         &__comment-area:focus-within::placeholder,
         &__comment-area:active::placeholder {
-            color: map-get($colors, 'main-accent');
+            color: var(--main-accent);
         }
     }
     
@@ -722,7 +722,7 @@ transform: scale(0.5);
         &__container:hover,
         &__container:focus,
         &__container:active {
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__input {
@@ -741,7 +741,7 @@ transform: scale(0.5);
     
         &__input:checked ~ &__icon-before {
             visibility: none;
-            fill: map-get($colors, 'main-accent');
+            fill: var(--main-accent);
         }
     
         &__icon-after {
@@ -759,11 +759,11 @@ transform: scale(0.5);
             font-weight: 400;
             font-size: 12px;
             line-height: 1.71;
-            color: map-get($colors, 'primary-text-color');
+            color: var(--primary-text-color);
         }
     
         &__agreement-link {
-            color: map-get($colors, 'main-accent');
+            color: var(--main-accent);
         }
     }
     
@@ -771,7 +771,7 @@ transform: scale(0.5);
         font-weight: 700;
         font-size: 16px;
         line-height: 1.87;
-        color: map-get($colors, 'secondary-text-color');
+        color: var(--secondary-text-color);
         
         width: 100%;
         max-width: 200px;
@@ -780,7 +780,7 @@ transform: scale(0.5);
         margin: 0 auto 28px;
       
         border: none;
-        background: map-get($colors, 'main-accent');
+        background: var(--main-accent);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
       
@@ -791,7 +791,7 @@ transform: scale(0.5);
     
         &:hover,
         &:focus {
-            background-color: map-get($colors, 'main-accent-hover');
+            background-color: var(--main-accent-hover);
         } 
     }
 }

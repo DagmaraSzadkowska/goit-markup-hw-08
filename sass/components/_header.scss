@@ -21,8 +21,8 @@
     font-weight: 500;
     letter-spacing: 0.2px;
 
-    background-color: map-get($colors, "main-background");
-    border-bottom: 1px solid map-get($colors, "border-color");
+    background-color: var(--main-background);
+    border-bottom: 1px solid var(--border-color);
     display: flex;
 
     &__logo {
@@ -38,7 +38,7 @@
     }
 
     &__link {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       text-decoration: none;
       margin: 0px;
 
@@ -49,11 +49,11 @@
     }
 
     &__accent {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__link:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__link--is-active-agency {
@@ -72,7 +72,7 @@
       width: 53px;
       height: 4px;
       border-radius: 2px;
-      background-color: map-get($colors, "main-accent");
+      background-color: var(--main-accent);
     }
 
     &__link--is-active-portfolio {
@@ -91,7 +91,7 @@
       width: 58px;
       height: 4px;
       border-radius: 2px;
-      background-color: map-get($colors, "main-accent");
+      background-color: var(--main-accent);
     }
 
     &__content {
@@ -109,7 +109,7 @@
     }
 
     &__contact-link {
-      color: map-get($colors, "primary-text-color");
+      color: var(--primary-text-color);
       text-decoration: none;
       margin: 0px;
 
@@ -120,11 +120,11 @@
     }
 
     &__contact-link:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__contact-link:hover .header__icon {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
 
     &__align-block {
@@ -135,7 +135,7 @@
     &__icon {
       display: inline-block;
       margin-right: 10px;
-      fill: map-get($colors, "primary-text-color");
+      fill: var(--primary-text-color);
       vertical-align: middle;
 
       transition-property: fill;
@@ -169,8 +169,8 @@
     font-weight: 500;
     letter-spacing: 0.2px;
 
-    background-color: map-get($colors, "main-background");
-    border-bottom: 1px solid map-get($colors, "border-color");
+    background-color: var(--main-background);
+    border-bottom: 1px solid var(--border-color);
     display: flex;
 
     &__logo {
@@ -179,14 +179,14 @@
 
     &__navigation {
       display: flex;
-      flex-basic: auto;
+      flex-basis: auto;
       align-items: flex-start;
       gap: 46px;
       margin: 0px;
     }
 
     &__link {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       text-decoration: none;
       margin: 0px;
 
@@ -197,11 +197,11 @@
     }
 
     &__accent {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__link:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__link--is-active-agency {
@@ -220,7 +220,7 @@
       width: 53px;
       height: 4px;
       border-radius: 2px;
-      background-color: map-get($colors, "main-accent");
+      background-color: var(--main-accent);
     }
 
     &__link--is-active-portfolio {
@@ -239,7 +239,7 @@
       width: 58px;
       height: 4px;
       border-radius: 2px;
-      background-color: map-get($colors, "main-accent");
+      background-color: var(--main-accent);
     }
 
     &__content {
@@ -259,7 +259,7 @@
 
     &__contact-link {
       display: flex;
-      color: map-get($colors, "primary-text-color");
+      color: var(--primary-text-color);
       text-decoration: none;
 
       transition-property: color;
@@ -269,11 +269,11 @@
     }
 
     &__contact-link:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__contact-link:hover .header__icon {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
 
     &__align-block {
@@ -284,7 +284,7 @@
     &__icon {
       display: inline-block;
       margin-right: 10px;
-      fill: map-get($colors, "primary-text-color");
+      fill: var(--primary-text-color);
       vertical-align: middle;
 
       transition-property: fill;
@@ -330,14 +330,14 @@
 
     &__button {
       padding: 12px 8px;
-      background-color: map-get($colors, "main-background");
+      background-color: var(--main-background);
       border: none;
       width: 40px;
       height: 40px;
     }
 
     &__button-icon {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
 
       z-index: 1;
 
@@ -348,7 +348,7 @@
     }
 
     &__button-icon:hover {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
   }
 
@@ -384,7 +384,7 @@
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: map-get($colors, "main-background");
+    background-color: var(--main-background);
     z-index: 999;
 
     transform: translateX(100%);
@@ -404,7 +404,7 @@
 
     &__navigation-link {
       text-decoration: none;
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       font-size: 40px;
       font-weight: 500;
       line-height: 1.17;
@@ -416,7 +416,7 @@
     }
 
     &__navigation-link:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__contact {
@@ -428,7 +428,7 @@
 
     &__tel {
       text-decoration: none;
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
       font-size: 34px;
       font-weight: 500;
       line-height: 1.17;
@@ -440,12 +440,12 @@
     }
 
     &__tel:hover {
-      color: map-get($colors, "main-accent-hover");
+      color: var(--main-accent-hover);
     }
 
     &__mail {
       text-decoration: none;
-      color: map-get($colors, "primary-text-color");
+      color: var(--primary-text-color);
       font-size: 24px;
       font-weight: 500;
       line-height: 1.17;
@@ -457,7 +457,7 @@
     }
 
     &__mail:hover {
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
     }
 
     &__socials {
@@ -472,7 +472,7 @@
       width: 100%;
       max-width: 357px;
       text-decoration: none;
-      color: map-get($colors, "main-accent");
+      color: var(--main-accent);
       font-size: 18px;
       font-weight: 500;
       line-height: 1.22;
@@ -484,12 +484,12 @@
     }
 
     &__social-link:hover {
-      color: map-get($colors, "main-accent-hover");
+      color: var(--main-accent-hover);
     }
 
     &__socials-accent {
       font-size: 22px;
-      color: map-get($colors, "icons-color");
+      color: var(--icons-color);
     }
   }
 }
