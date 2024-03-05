@@ -1,10 +1,10 @@
 // ekran monitora
 @media screen and (min-width: 1200px) {
   .clients {
-    background-color: map-get($colors, "main-background");
+    background-color: var(--main-background);
 
     &__title {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       margin: 0px auto 50px;
       text-align: center;
       font-size: 36px;
@@ -23,8 +23,8 @@
 
     &__card {
       margin: 0 15px;
-      border: 1px solid map-get($colors, "icons-color");
-      fill: map-get($colors, "icons-color");
+      border: 1px solid var(--icons-color);
+      fill: var(--icons-color);
       border-radius: 4px;
       cursor: pointer;
 
@@ -37,8 +37,8 @@
     &__card:hover,
     &__card:focus,
     &__card:active {
-      border-color: map-get($colors, "main-accent");
-      fill: map-get($colors, "main-accent");
+      border-color: var(--main-accent);
+      fill: var(--main-accent);
     }
 
     &__logo {
@@ -54,7 +54,7 @@
     &__logo:hover,
     &__logo:focus,
     &__logo:active {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
   }
 }
@@ -62,13 +62,13 @@
 // ekran tabletu
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
-    background-color: map-get($colors, "main-background");
+    background-color: var(--main-background);
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__title {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       margin: 0px auto 30px;
       text-align: center;
       font-size: 28px;
@@ -89,8 +89,8 @@
     }
 
     &__card {
-      border: 1px solid map-get($colors, "icons-color");
-      fill: map-get($colors, "icons-color");
+      border: 1px solid var(--icons-color);
+      fill: var(--icons-color);
       border-radius: 4px;
       cursor: pointer;
 
@@ -103,8 +103,8 @@
     &__card:hover,
     &__card:focus,
     &__card:active {
-      border-color: map-get($colors, "main-accent");
-      fill: map-get($colors, "main-accent");
+      border-color: var(--main-accent);
+      fill: var(--main-accent);
     }
 
     &__logo {
@@ -120,7 +120,7 @@
     &__logo:hover,
     &__logo:focus,
     &__logo:active {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
   }
 }
@@ -128,10 +128,10 @@
 // ekran telefonu
 @media screen and (max-width: 767px) {
   .clients {
-    background-color: map-get($colors, "main-background");
+    background-color: var(--main-background);
 
     &__title {
-      color: map-get($colors, "basic-text-color");
+      color: var(--basic-text-color);
       margin: 0px auto 30px;
       text-align: center;
       font-size: 28px;
@@ -150,8 +150,8 @@
     }
 
     &__card {
-      border: 1px solid map-get($colors, "icons-color");
-      fill: map-get($colors, "icons-color");
+      border: 1px solid var(--icons-color);
+      fill: var(--icons-color);
       border-radius: 4px;
       cursor: pointer;
 
@@ -164,8 +164,8 @@
     &__card:hover,
     &__card:focus,
     &__card:active {
-      border-color: map-get($colors, "main-accent");
-      fill: map-get($colors, "main-accent");
+      border-color: var(--main-accent);
+      fill: var(--main-accent);
     }
 
     &__logo {
@@ -181,7 +181,7 @@
     &__logo:hover,
     &__logo:focus,
     &__logo:active {
-      fill: map-get($colors, "main-accent");
+      fill: var(--main-accent);
     }
   }
 }

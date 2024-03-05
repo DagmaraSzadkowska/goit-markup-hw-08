@@ -1,15 +1,22 @@
 .logo {
-    color: map-get($colors, 'logo-color');
     text-decoration: none;
-    font-family: "Raleway";
-    font-size: 26px;
-    line-height: 1.19;
+
+    font-family: var(--font-raleway);
+    font-size: var(--size-26);
+
+    color: var(--logo-color);
 
     &__accent {
-        color: map-get($colors, 'main-accent');
+        color: var(--main-accent);
+    }
+
+    :hover {
+        &__accent {
+            color: var(--main-accent-hover);
+        }
     }
   }
 
 .logo--alt {
-    color: map-get($colors, 'secondary-text-color');
+    color: var(--secondary-text-color);
 }

@@ -9,8 +9,8 @@
     }
 
     &__button {
-        background-color: map-get($colors, 'medium-background');
-        color: map-get($colors, 'basic-text-color');
+        background-color: var(--medium-background);
+        color: var(--basic-text-color);
         border: none;
         border-radius: 4px;
         text-align: center;
@@ -29,8 +29,8 @@
     &__button:hover,
     &__button:focus,
     &__button:active {
-        background-color: map-get($colors, 'main-accent');
-        color: map-get($colors, 'secondary-text-color');
+        background-color: var(--main-accent);
+        color: var(--secondary-text-color);
         box-shadow: 0px 2px 2px 0px #0000001F;
         box-shadow: 0px 1px 2px 0px #00000014;
         box-shadow: 0px 3px 1px 0px #0000001A;
