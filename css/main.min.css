@@ -48,6 +48,15 @@ a {
   margin: 0 auto;
 }
 
+.section {
+  padding: 60px 15px;
+}
+@media screen and (min-width: 992px) {
+  .section {
+    padding: 94px 15px;
+  }
+}
+
 .logo {
   text-decoration: none;
   font-family: "Raleway";
@@ -386,194 +395,99 @@ a {
   height: 16px;
 }
 
-@media screen and (min-width: 1200px) {
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_phone.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_phone.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  color: var(--secondary-text-color);
+  text-align: center;
+  height: 400px;
+}
+@media screen and (min-width: 768px) {
   .banner {
-    background-color: var(--dark-background);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 1600px 600px;
-    text-align: center;
-    color: var(--secondary-text-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_tablet.jpg");
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .banner .banner {
-    background-image: url("../images/background@2x.jpg");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .banner__title {
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.6px;
-    margin: 0px auto 30px;
-  }
-  .banner__button {
-    background-color: var(--main-accent);
-    border: none;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.6px;
-    cursor: pointer;
-    padding: 10px 42px;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .banner__button:hover, .banner__button:focus, .banner__button:active {
-    background-color: var(--main-accent-hover);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) {
   .banner {
-    width: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: var(--dark-background);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background_tablet.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background_tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 768px 400px;
-    height: 400px;
-    text-align: center;
-    color: var(--secondary-text-color);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_desktop.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_desktop.jpg");
+    height: 600px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .banner .banner {
-    background-image: url("../images/background_tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_phone@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_phone@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .banner__title {
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.6px;
-    margin: 0 3 30px 0;
-  }
-  .banner__button {
-    background-color: var(--main-accent);
-    border: none;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.6px;
-    cursor: pointer;
-    padding: 10px 42px;
-    width: 200px;
-    height: 50px;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .banner__button:hover, .banner__button:focus, .banner__button:active {
-    background-color: var(--main-accent-hover);
-  }
-}
-@media screen and (max-width: 767px) {
-  .banner {
-    width: 100%;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: var(--dark-background);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background_phone.jpg");
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background_phone.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 480px 400px;
-    text-align: center;
-    color: var(--secondary-text-color);
-    height: 400px;
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .banner .banner {
-    background-image: url("../images/background_phone@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_tablet@2x.jpg");
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 992px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 992px), screen and (min-resolution: 192dpi) and (min-width: 992px), screen and (min-resolution: 2dppx) and (min-width: 992px) {
+  .banner .banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/background/background_desktop@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/background/background_desktop@2x.jpg");
+  }
+}
+.banner__title {
+  font-family: "Roboto";
+  font-size: 1.625rem;
+  font-weight: 900;
+  letter-spacing: 0.06rem;
+  line-height: 2.625rem;
+  margin: 0;
+  cursor: default;
+}
+@media screen and (min-width: 992px) {
   .banner__title {
-    font-size: 26px;
-    line-height: 1.61;
-    letter-spacing: 0.6px;
-  }
-  .banner__button {
-    background-color: var(--main-accent);
-    border: none;
-    border-radius: 4px;
-    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    text-align: center;
-    color: var(--secondary-text-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.87;
-    letter-spacing: 0.6px;
-    cursor: pointer;
-    padding: 10px 42px;
-    -webkit-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .banner__button:hover, .banner__button:focus, .banner__button:active {
-    background-color: var(--main-accent-hover);
+    font-family: "Roboto";
+    font-size: 2.75rem;
+    font-weight: 900;
+    line-height: 3.75rem;
   }
 }
+.banner__button {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--main-accent);
+  border: none;
+  border-radius: 4px;
+  color: var(--secondary-text-color);
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  line-height: 1.875rem;
+  text-align: center;
+  padding: 10px 41px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.banner__button:hover, .banner__button:focus, .banner__button:active {
+  background-color: var(--main-accent-hover);
+}
+
 @media screen and (min-width: 1200px) {
   .description {
     background-color: var(--main-background);

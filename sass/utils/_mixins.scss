@@ -13,7 +13,7 @@ $breakpoints: (
   @media screen and ($query) {
     @content;
   }
-}
+};
 
 $font-family: (
   'roboto': 'Roboto',
@@ -24,7 +24,9 @@ $font-weights: (
   'regular': 400,
   'medium': 500,
   'semi-bold': 600,
-  'bold': 700
+  'bold': 700,
+  'extra-bold': 800,
+  'black': 900
 );
 
 $font-sizes: (
@@ -35,7 +37,8 @@ $font-sizes: (
   '24': 1.5rem,
   '26': 1.625rem,
   '34': 2.125rem,
-  '40': 2.5rem
+  '40': 2.5rem,
+  '44': 2.75rem
 );
 
 @mixin font($family, $size, $weight) {
@@ -46,4 +49,8 @@ $font-sizes: (
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-}
+};
+
+@mixin something($property, $time: 0.3s, $type: ease-in-out) {
+  transition: $property $time $type;
+};

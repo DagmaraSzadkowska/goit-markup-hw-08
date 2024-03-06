@@ -27,3 +27,11 @@ a {
 
   margin: 0 auto;
 }
+
+.section {
+  padding: 60px 15px;
+
+  @include screen('large') {
+    padding: 94px 15px;
+  }
+}
