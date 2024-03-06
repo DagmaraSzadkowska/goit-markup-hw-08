@@ -1,22 +1,25 @@
 .logo {
-    text-decoration: none;
+  text-decoration: none;
 
-    font-family: var(--font-raleway);
-    font-size: var(--size-26);
+  @include font('raleway', '24', 'bold');
+  color: var(--logo-color);
 
-    color: var(--logo-color);
+  &__accent {
+    color: var(--main-accent);
+    transition: 0.3s ease-in-out;
+  }
 
-    &__accent {
-        color: var(--main-accent);
-    }
-
-    :hover {
-        &__accent {
-            color: var(--main-accent-hover);
-        }
+  &:hover {
+    .logo__accent {
+      color: var(--main-accent-hover);
     }
   }
 
+  @include screen('large') {
+    @include font('raleway', '26', 'bold');
+  }
+}
+
 .logo--alt {
-    color: var(--secondary-text-color);
+  color: var(--secondary-text-color);
 }
