@@ -23,7 +23,7 @@ body {
   line-height: auto;
   letter-spacing: 3%;
   color: var(--basic-text-color);
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 ul {
@@ -834,202 +834,92 @@ a {
   fill: var(--secondary-text-color);
 }
 
-@media screen and (min-width: 1200px) {
+.clients {
+  background-color: var(--main-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 992px) {
   .clients {
-    background-color: var(--main-background);
-  }
-  .clients__title {
-    color: var(--basic-text-color);
-    margin: 0px auto 50px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-  }
-  .clients__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 0px;
-    margin: 50px 0 auto;
-    list-style: none;
-  }
-  .clients__card {
-    margin: 0 15px;
-    border: 1px solid var(--icons-color);
-    fill: var(--icons-color);
-    border-radius: 4px;
-    cursor: pointer;
-    -webkit-transition-property: border-color;
-    transition-property: border-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__card:hover, .clients__card:focus, .clients__card:active {
-    border-color: var(--main-accent);
-    fill: var(--main-accent);
-  }
-  .clients__logo {
-    display: block;
-    margin: 16px 32px;
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__logo:hover, .clients__logo:focus, .clients__logo:active {
-    fill: var(--main-accent);
+    gap: 50px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients {
-    background-color: var(--main-background);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+.clients__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  color: var(--basic-text-color);
+  cursor: default;
+  margin: 0;
+}
+@media screen and (min-width: 992px) {
   .clients__title {
-    color: var(--basic-text-color);
-    margin: 0px auto 30px;
-    text-align: center;
-    font-size: 28px;
+    font-family: "Roboto";
+    font-size: 2.25rem;
     font-weight: 700;
-    line-height: 1.17;
-  }
-  .clients__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 738px;
-    gap: 30px;
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style: none;
-  }
-  .clients__card {
-    border: 1px solid var(--icons-color);
-    fill: var(--icons-color);
-    border-radius: 4px;
-    cursor: pointer;
-    -webkit-transition-property: border-color;
-    transition-property: border-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__card:hover, .clients__card:focus, .clients__card:active {
-    border-color: var(--main-accent);
-    fill: var(--main-accent);
-  }
-  .clients__logo {
-    display: block;
-    margin: 16px 32px;
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__logo:hover, .clients__logo:focus, .clients__logo:active {
-    fill: var(--main-accent);
   }
 }
-@media screen and (max-width: 767px) {
-  .clients {
-    background-color: var(--main-background);
-  }
-  .clients__title {
-    color: var(--basic-text-color);
-    margin: 0px auto 30px;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 1.17;
-  }
-  .clients__cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
-    margin: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    list-style: none;
-  }
+.clients__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.clients__card {
+  border: 1px solid var(--icons-color);
+  fill: var(--icons-color);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+  width: 210px;
+  height: 92px;
+}
+@media screen and (min-width: 768px) {
   .clients__card {
-    border: 1px solid var(--icons-color);
-    fill: var(--icons-color);
-    border-radius: 4px;
-    cursor: pointer;
-    -webkit-transition-property: border-color;
-    transition-property: border-color;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__card:hover, .clients__card:focus, .clients__card:active {
-    border-color: var(--main-accent);
-    fill: var(--main-accent);
-  }
-  .clients__logo {
-    display: block;
-    margin: 16px 32px;
-    -webkit-transition-property: fill;
-    transition-property: fill;
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
-    -webkit-transition-delay: 0ms;
-            transition-delay: 0ms;
-    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .clients__logo:hover, .clients__logo:focus, .clients__logo:active {
-    fill: var(--main-accent);
+    width: 226px;
   }
 }
+@media screen and (min-width: 992px) {
+  .clients__card {
+    width: 170px;
+  }
+}
+.clients__card:hover, .clients__card:focus, .clients__card:active {
+  border-color: var(--main-accent);
+  fill: var(--main-accent);
+}
+.clients__logo {
+  display: block;
+  -webkit-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+.clients__logo:hover, .clients__logo:focus, .clients__logo:active {
+  fill: var(--main-accent);
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     background-color: var(--dark-background);
