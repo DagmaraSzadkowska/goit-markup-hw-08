@@ -52,6 +52,6 @@ $font-sizes: (
   font-weight: $font-weight;
 };
 
-@mixin something($property, $time: 0.3s, $type: ease-in-out) {
+@mixin transition($property, $time: 0.3s, $type: ease-in-out) {
   transition: $property $time $type;
 };
