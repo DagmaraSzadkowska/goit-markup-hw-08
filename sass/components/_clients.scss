@@ -1,187 +1,74 @@
-// ekran monitora
-@media screen and (min-width: 1200px) {
-  .clients {
-    background-color: var(--main-background);
+.clients {
+  background-color: var(--main-background);
 
-    &__title {
-      color: var(--basic-text-color);
-      margin: 0px auto 50px;
-      text-align: center;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 1.16;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 
-    &__cards {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0px;
-      margin: 50px 0 auto;
-      list-style: none;
-    }
+  @include screen('large') {
+    gap: 50px;
+  }
 
-    &__card {
-      margin: 0 15px;
-      border: 1px solid var(--icons-color);
-      fill: var(--icons-color);
-      border-radius: 4px;
-      cursor: pointer;
+  &__title {
+    @include font('roboto', '28', 'bold');
+    color: var(--basic-text-color);
+    cursor: default;
+    margin: 0;
 
-      transition-property: border-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__card:hover,
-    &__card:focus,
-    &__card:active {
-      border-color: var(--main-accent);
-      fill: var(--main-accent);
-    }
-
-    &__logo {
-      display: block;
-      margin: 16px 32px;
-
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__logo:hover,
-    &__logo:focus,
-    &__logo:active {
-      fill: var(--main-accent);
+    @include screen('large') {
+      @include font('roboto', '36', 'bold');
     }
   }
-}
 
-// ekran tabletu
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .clients {
-    background-color: var(--main-background);
+  &__cards {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__card {
+    border: 1px solid var(--icons-color);
+    fill: var(--icons-color);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 
-    &__title {
-      color: var(--basic-text-color);
-      margin: 0px auto 30px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.17;
+    @include transition(border-color);
+
+    cursor: pointer;
+
+    width: 210px;
+    height: 92px;
+
+    @include screen('medium') {
+      width: 226px;
     }
 
-    &__cards {
-      display: flex;
-      flex-wrap: wrap;
-      width: 738px;
-
-      gap: 30px;
-      margin: 0;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-    }
-
-    &__card {
-      border: 1px solid var(--icons-color);
-      fill: var(--icons-color);
-      border-radius: 4px;
-      cursor: pointer;
-
-      transition-property: border-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__card:hover,
-    &__card:focus,
-    &__card:active {
-      border-color: var(--main-accent);
-      fill: var(--main-accent);
-    }
-
-    &__logo {
-      display: block;
-      margin: 16px 32px;
-
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__logo:hover,
-    &__logo:focus,
-    &__logo:active {
-      fill: var(--main-accent);
+    @include screen('large') {
+      width: 170px;
     }
   }
-}
 
-// ekran telefonu
-@media screen and (max-width: 767px) {
-  .clients {
-    background-color: var(--main-background);
+  &__card:hover,
+  &__card:focus,
+  &__card:active {
+    border-color: var(--main-accent);
+    fill: var(--main-accent);
+  }
 
-    &__title {
-      color: var(--basic-text-color);
-      margin: 0px auto 30px;
-      text-align: center;
-      font-size: 28px;
-      font-weight: 700;
-      line-height: 1.17;
-    }
+  &__logo {
+    display: block;
 
-    &__cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 0;
-      justify-content: center;
-      align-items: center;
-      list-style: none;
-    }
+    @include transition(fill);
+  }
 
-    &__card {
-      border: 1px solid var(--icons-color);
-      fill: var(--icons-color);
-      border-radius: 4px;
-      cursor: pointer;
-
-      transition-property: border-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__card:hover,
-    &__card:focus,
-    &__card:active {
-      border-color: var(--main-accent);
-      fill: var(--main-accent);
-    }
-
-    &__logo {
-      display: block;
-      margin: 16px 32px;
-
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__logo:hover,
-    &__logo:focus,
-    &__logo:active {
-      fill: var(--main-accent);
-    }
+  &__logo:hover,
+  &__logo:focus,
+  &__logo:active {
+    fill: var(--main-accent);
   }
 }
