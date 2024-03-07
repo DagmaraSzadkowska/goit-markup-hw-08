@@ -71,7 +71,7 @@
 
     padding: 10px 41px;
 
-    @include something(background-color);
+    @include transition(background-color);
 
     cursor: pointer;
 
