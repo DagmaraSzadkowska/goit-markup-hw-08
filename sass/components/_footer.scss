@@ -19,6 +19,7 @@
 
     @include screen(large) {
       flex-direction: row;
+      align-items: flex-start;
       gap: 77px;
     }
   }
@@ -29,6 +30,16 @@
   flex-direction: column;
   align-items: center;
   gap: 60px;
+
+  @include screen(medium) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 144px;
+  }
+
+  @include screen(large) {
+    gap: 70px;
+  }
 }
 
 .footer-main {
@@ -36,6 +47,11 @@
   flex-direction: column;
   text-align: center;
   gap: 20px;
+  width: 250px;
+
+  @include screen(large) {
+    text-align: left;
+  }
 
   &__informations {
     display: flex;
@@ -115,7 +131,7 @@
 }
 
 .footer-newsletter {
- width: 100%;
+  width: 100%;
 }
 
 .newsletter {
@@ -124,12 +140,21 @@
   align-items: center;
   gap: 20px;
 
+  @include screen(large) {
+    align-items: flex-start;
+  }
+
   &__form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    @include screen(large) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
 
   &__title {
