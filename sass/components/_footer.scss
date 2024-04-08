@@ -1,540 +1,208 @@
-// ekran monitora
-@media screen and (min-width: 1200px) {
-  .footer {
-    background-color: var(--dark-background);
-    color: var(--secondary-text-color);
+.footer {
+  background-color: var(--dark-background);
+  color: var(--secondary-text-color);
+  padding: 60px 0;
 
-    &__content {
-      padding-top: 60px;
-      padding-bottom: 60px;
-      display: flex;
-      justify-content: center;
-    }
+  @include screen(medium) {
+    padding: 65px 0 60px;
   }
 
-  .footer-main {
-    &__logo {
-      margin-bottom: 20px;
-      padding-left: 15px;
-    }
-
-    &__informations {
-      padding-left: 15px;
-      margin: 0px;
-      list-style: none;
-    }
-
-    &__information {
-      font-size: 14px;
-      line-height: 1.71;
-      margin-bottom: 9px;
-    }
-
-    &__information:last-child {
-      margin-bottom: 0px;
-    }
-
-    &__address {
-      font-style: normal;
-    }
-
-    &__link {
-      color: var(--transparent-text-color);
-      text-decoration: none;
-      padding: 0px;
-
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:hover,
-    &__link:focus,
-    &__link:active {
-      color: var(--main-accent);
-    }
+  @include screen(large) {
+    padding: 60px 0;
   }
 
-  .footer-links {
-    margin-left: 70px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
 
-    &__title {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      margin-bottom: 20px;
+    @include screen(large) {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 77px;
     }
-
-    &__socials {
-      display: flex;
-      list-style: none;
-    }
-
-    &__buttons {
-      background-color: var(--transparent-background-color);
-      border-radius: 50%;
-      padding: 12px;
-      margin: 0px 10px 0px 0px;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__buttons:hover,
-    &__buttons:focus-within,
-    &__buttons:active {
-      background-color: var(--main-accent);
-    }
-
-    &__link {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-
-    &__icon {
-      display: block;
-      fill: var(--secondary-text-color);
-    }
-  }
-
-  .newsletter {
-    padding-top: 12px;
-    margin-left: 78px;
-
-    &__form {
-      display: flex;
-    }
-
-    &__title {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      align-self: flex-start;
-      margin: 12px 0 20px;
-    }
-
-    &__input {
-      color: var(--transparent-text-color);
-      background-color: var(--dark-background);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-
-      width: 358px;
-      height: 50px;
-      padding: 15px 16px;
-      margin-top: 20px;
-    }
-
-    &__button {
-      display: flex;
-
-      width: 200px;
-      height: 50px;
-      background-color: var(--main-accent);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      border: 0px;
-
-      color: var(--secondary-text-color);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-
-      padding: 10px 28px 10px 42px;
-      margin: 20px 0px 0px 12px;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__button:hover,
-    &__button:focus,
-    &__button:active {
-      background-color: var(--main-accent-hover);
-    }
-
-    &__icon {
-      margin-top: 3px;
-      margin-left: 24px;
-    }
-  }
-
-  .mobile-newsletter {
-    display: none;
   }
 }
 
-// ekran tabletu
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer {
-    background-color: var(--dark-background);
-    color: var(--secondary-text-color);
-    padding-bottom: 60px;
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
 
-    &__content {
-      width: 100%;
-      max-width: 768px;
-      padding: 60px 0;
-      margin: 0 auto;
+  @include screen(medium) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 144px;
+  }
 
-      display: flex;
-      justify-content: center;
-      gap: 144px;
+  @include screen(large) {
+    gap: 70px;
+  }
+}
+
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  width: 250px;
+
+  @include screen(large) {
+    text-align: left;
+  }
+
+  &__informations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    list-style: none;
+    margin: 0px;
+  }
+
+  &__info {
+    @include font('roboto', '14', 'regular');
+    line-height: 1.71;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__link {
+    color: var(--transparent-text-color);
+    text-decoration: none;
+    padding: 0px;
+
+    @include transition(color);
+  }
+
+  &__link:hover,
+  &__link:focus,
+  &__link:active {
+    color: var(--main-accent);
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__title {
+    text-transform: uppercase;
+    @include font('roboto', '14', 'bold');
+    line-height: 1.14;
+    margin: 0;
+  }
+
+  &__socials {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+  }
+
+  &__buttons {
+    background-color: var(--transparent-background-color);
+    border-radius: 50%;
+    padding: 12px;
+    margin: 0;
+    cursor: pointer;
+
+    @include transition(background-color);
+  }
+
+  &__buttons:hover,
+  &__buttons:focus-within,
+  &__buttons:active {
+    background-color: var(--main-accent);
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: var(--secondary-text-color);
+  }
+}
+
+.footer-newsletter {
+  width: 100%;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include screen(large) {
+    align-items: flex-start;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @include screen(large) {
+      flex-direction: row;
+      align-items: flex-start;
     }
   }
 
-  .footer-main {
-    text-align: center;
-    
-    &__logo {
-      margin-bottom: 20px;
-    }
-
-    &__informations {
-      margin: 0px;
-      list-style: none;
-    }
-
-    &__information {
-      font-size: 14px;
-      line-height: 1.71;
-      margin-bottom: 9px;
-    }
-
-    &__information:last-child {
-      margin-bottom: 0px;
-    }
-
-    &__address {
-      font-style: normal;
-    }
-
-    &__link {
-      color: var(--transparent-text-color);
-      text-decoration: none;
-      padding: 0px;
-
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:hover,
-    &__link:focus,
-    &__link:active {
-      color: var(--main-accent);
-    }
+  &__title {
+    text-transform: uppercase;
+    @include font('roboto', '14', 'bold');
+    line-height: 1.14;
   }
 
-  .footer-links {
-    text-align: center;
+  &__input {
+    background-color: transparent;
+    color: var(--transparent-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
 
-    &__title {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      margin: 0 0 20px;
-    }
-
-    &__socials {
-      display: flex;
-      gap: 10px;
-      list-style: none;
-      margin: 0px;
-    }
-
-    &__buttons {
-      background-color: var(--transparent-background-color);
-      border-radius: 50%;
-      padding: 12px;
-      margin: 0px 0px;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__buttons:hover,
-    &__buttons:focus-within,
-    &__buttons:active {
-      background-color: var(--main-accent);
-    }
-
-    &__link {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-
-    &__icon {
-      display: block;
-      fill: var(--secondary-text-color);
-    }
+    width: 90%;
+    max-width: 450px;
+    padding: 15px 16px;
   }
 
-  .newsletter {
-    display: none;
-  }
-
-  .mobile-newsletter {
+  &__button {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 
-    &__form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    cursor: pointer;
 
-    &__title {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      align-self: flex-start;
-      margin: 12px 0 20px;
-    }
+    width: 200px;
+    height: 50px;
 
-    &__input {
-      color: var(--transparent-text-color);
-      background-color: var(--dark-background);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
+    background-color: var(--main-accent);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
 
-      width: 450px;
-      height: 50px;
-      padding: 15px 16px;
-      margin-top: 20px;
-    }
-
-    &__button {
-      display: flex;
-
-      width: 200px;
-      height: 50px;
-      background-color: var(--main-accent);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      border: 0px;
-
-      color: var(--secondary-text-color);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-
-      padding: 10px 28px 10px 42px;
-      margin: 20px 0 0 0;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__button:hover,
-    &__button:focus,
-    &__button:active {
-      background-color: var(--main-accent-hover);
-    }
-
-    &__icon {
-      margin-top: 3px;
-      margin-left: 24px;
-    }
-  }
-}
-
-// ekran telefonu
-@media screen and (max-width: 767px) {
-  .footer {
-    background-color: var(--dark-background);
     color: var(--secondary-text-color);
-    padding-bottom: 60px;
+    @include font('roboto', '16', 'bold');
+    line-height: 1.87;
 
-    &__content {
-      width: 100%;
-      max-width: 768px;
-      padding: 60px 0;
-      margin: 0 auto;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-    }
+    @include transition(background-color);
   }
 
-  .footer-main {
-    text-align: center;
-    
-    &__logo {
-      margin-bottom: 20px;
-    }
-
-    &__informations {
-      margin: 0px;
-      list-style: none;
-    }
-
-    &__information {
-      font-size: 14px;
-      line-height: 1.71;
-      margin-bottom: 9px;
-    }
-
-    &__information:last-child {
-      margin-bottom: 0px;
-    }
-
-    &__address {
-      font-style: normal;
-    }
-
-    &__link {
-      color: var(--transparent-text-color);
-      text-decoration: none;
-      padding: 0px;
-
-      transition-property: color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:hover,
-    &__link:focus,
-    &__link:active {
-      color: var(--main-accent);
-    }
+  &__button:hover,
+  &__button:focus,
+  &__button:active {
+    background-color: var(--main-accent-hover);
   }
 
-  .footer-links {
-    text-align: center;
-
-    &__title {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 1.14;
-      margin: 0 0 20px;
-    }
-
-    &__socials {
-      display: flex;
-      gap: 10px;
-      list-style: none;
-      margin: 0px;
-    }
-
-    &__buttons {
-      background-color: var(--transparent-background-color);
-      border-radius: 50%;
-      padding: 12px;
-      margin: 0px 0px;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__buttons:hover,
-    &__buttons:focus-within,
-    &__buttons:active {
-      background-color: var(--main-accent);
-    }
-
-    &__link {
-      display: block;
-      width: 20px;
-      height: 20px;
-    }
-
-    &__icon {
-      display: block;
-      fill: var(--secondary-text-color);
-    }
-  }
-
-  .newsletter {
-    display: none;
-  }
-
-  .mobile-newsletter {
-    text-align: center;
-    margin: 0 5px;
-
-    &__title {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 1.14;
-      align-self: flex-start;
-      margin: 0 auto 20px auto;
-    }
-
-    &__input {
-      color: var(--transparent-text-color);
-      background-color: var(--dark-background);
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-      border-radius: 4px;
-
-      width: 100%;
-      max-width: 450px;
-      height: 50px;
-      padding: 15px 16px;
-      margin-top: 20px;
-    }
-
-    &__button {
-      display: flex;
-
-      width: 200px;
-      height: 50px;
-      background-color: var(--main-accent);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      border-radius: 4px;
-      border: 0px;
-
-      color: var(--secondary-text-color);
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 1.87;
-
-      padding: 10px 28px 10px 42px;
-      margin: 20px auto 0;
-
-      transition-property: background-color;
-      transition-duration: 250ms;
-      transition-delay: 0ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__button:hover,
-    &__button:focus,
-    &__button:active {
-      background-color: var(--main-accent-hover);
-    }
-
-    &__icon {
-      margin-top: 3px;
-      margin-left: 24px;
-    }
+  &__icon {
+    margin-left: 24px;
   }
 }
