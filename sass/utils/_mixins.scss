@@ -52,6 +52,12 @@ $font-sizes: (
   font-weight: $font-weight;
 };
 
-@mixin transition($property, $time: 0.3s, $type: ease-in-out) {
-  transition: $property $time $type;
-};
+@mixin transition($properties...) {
+  $transition: ();
+  @each $property in $properties {
+    $transition: append(
+        $transition, ($property 0.3s ease-in-out), $separator: comma
+    );
+  }
+  transition: $transition;
+}
