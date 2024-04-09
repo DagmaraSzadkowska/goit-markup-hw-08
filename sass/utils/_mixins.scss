@@ -47,7 +47,7 @@ $font-sizes: (
   $font-size: map-get($font-sizes, $size);
   $font-weight: map-get($font-weights, $weight);
 
-  font-family: $font-family;
+  font-family: $font-family, Arial, sans-serif;
   font-size: $font-size;
   font-weight: $font-weight;
 };
