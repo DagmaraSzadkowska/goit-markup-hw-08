@@ -11,4 +11,8 @@
     @include screen(large) {
         gap: 50px;
     }
+
+    &__title {
+        margin: 0;
+    }
 }
