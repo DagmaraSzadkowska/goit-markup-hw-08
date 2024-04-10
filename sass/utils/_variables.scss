@@ -1,26 +1,26 @@
-$colors: (
-  // Kolory tekstu
-  "logo-color": #000000,
-  "basic-text-color": #212121,
-  "primary-text-color": #757575,
-  "secondary-text-color": #ffffff,
-  "transparent-text-color": #ffffff90,
+:root {
+  // Accents
+  --main-accent: #2196f3;
+  --main-accent-hover: #64b6f7;
 
-  // Kolory akcentów
-  "main-accent": #2196f3,
-  "main-accent-hover": #64b6f7,
+  // Text colors
+  --logo-color: #000000;
+  --basic-text-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --transparent-text-color: #ffffff90;
 
-  // Kolory tła
-  "main-background": #ffffff,
-  "light-background": #e5e5e5,
-  "medium-background": #f5f4fa,
-  "dark-background": #2f303a,
-  "transparent-background-color": #ffffff1a,
+  // Background colors
+  --main-background: #ffffff;
+  --light-background: #e5e5e5;
+  --medium-background: #f5f4fa;
+  --dark-background: #2f303a;
+  --transparent-background-color: #ffffff1a;
 
-  // Dodatkowe kolory
-  "border-color": #ececec,
-  "icons-color": #afb1b8,
-  "overlay-color": #2196f3e6,
-  "thumb-color": #2f303acc,
-  "modal-shadow": #00000033
-);
+  // Additional colors
+  --border-color: #ececec;
+  --icons-color: #afb1b8;
+  --overlay-color: #2196f3e6;
+  --thumb-color: #2f303acc;
+  --modal-shadow: #00000033;
+}

@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>WebStudio | Portfolio</title>
+    <link href="./images/favicon/light-mode-favicon.ico" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="./images/favicon/dark-mode-favicon.ico" rel="icon" media="(prefers-color-scheme: dark)">
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./css/main.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+</head>
   <body>
     <header class="header">
       <div class="container header__content">
         <div class="header__logo">
-          <a href="index.html" class="logo">
-            <span class="logo__accent">Web</span>Studio</a
-          >
+          <a href="index.html" class="logo"> <span class="logo__accent">Web</span>Studio</a>
         </div>
 
         <nav>
@@ -26,10 +36,10 @@
               <a href="index.html" class="header__link">Agencja</a>
             </li>
             <li>
-              <a href="portfolio.html" class="header__link header__link--is-active-portfolio header__accent">Portfolio</a>
+              <a href="portfolio.html" class="header__link header__link--is-active header__accent">Portfolio</a>
             </li>
             <li>
-              <a href="#kontakt" class="header__link">Kontakt</a>
+              <a href="contact.html" class="header__link">Kontakt</a>
             </li>
           </ul>
         </nav>
@@ -37,18 +47,97 @@
         <ul class="header__contact">
           <li class="header__side">
             <a href="mailto:info@devstudio.com" class="header__contact-link">
-              <svg class="header__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
+              <svg class="header__icon">
+                <use href="./images/icons/icons.svg#icon-envelope"></use>
               </svg>
-              <div class="header__align-block">info@devstudio.com</div>
+              <span class="header__contact-text">info@devstudio.com</span>
             </a>
           </li>
           <li class="header__side">
             <a href="tel:+48111111111" class="header__contact-link">
-              <svg class="header__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
+              <svg class="header__icon">
+                <use href="./images/icons/icons.svg#icon-smartphone"></use>
               </svg>
-              +48 111 111 111
+              <span class="header__contact-text">+48 111 111 111</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="container mobile-header">
+        <div class="header__logo">
+          <a href="index.html" class="logo"> <span class="logo__accent">Web</span>Studio</a>
+        </div>
+
+        <button
+          class="mobile-header__button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-header__button-icon" width="24px" height="16px">
+            <use href="./images/icons/menu-icon.svg#menu-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="menu-container__navigation">
+          <li>
+            <a href="index.html" class="menu-container__navigation-link">Agencja</a>
+          </li>
+          <li>
+            <a href="portfolio.html" class="menu-container__navigation-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="contact.html" class="menu-container__navigation-link">Kontakt</a>
+          </li>
+        </ul>
+
+        <ul class="menu-container__contact">
+          <li>
+            <a href="tel:+48111111111" class="menu-container__tel"> +48 111 111 111 </a>
+          </li>
+          <li>
+            <a href="mailto:info@example.com" class="menu-container__mail"> info@devstudio.com </a>
+          </li>
+        </ul>
+
+        <ul class="menu-container__socials">
+          <li>
+            <a href="https://instagram.com" class="menu-container__social-link">
+              Instagram
+              <span class="menu-container__socials-accent">|</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com" class="menu-container__social-link">
+              Twitter
+              <span class="menu-container__socials-accent">|</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://facebook.com" class="menu-container__social-link">
+              Facebook
+              <span class="menu-container__socials-accent">|</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://linkedin.com" class="menu-container__social-link">
+              LinkedIn
+              <span class="menu-container__socials-accent">|</span>
             </a>
           </li>
         </ul>
@@ -57,8 +146,8 @@
 
     <main>
       <section class="section">
-        <div class="container">
-
+        <div class="container portfolio">
+          <h2 class="portfolio__title">Zrealizowane projekty</h2>
           <ul class="sorting">
             <li class="sorting__block">
               <button type="button" class="sorting__button">
@@ -87,260 +176,250 @@
             </li>
           </ul>
 
-        <ul class="projects">
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
+          <ul class="projects">
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                  <img
+                    src="images/project/project_1.jpg"
+                    alt="Laptop wyświetlający stronę internetową."
+                    width="370px"
+                    height="294px"
+                    class="projects__img">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">Stworzyliśmy dynamiczną obecność online dla Technocrack, łącząc elegancki design z intuicyjną funkcjonalnością. Odkrywaj ich ofertę płynnie na platformie, która odzwierciedla ich innowacyjny duch.</p>
+                  </div>
+                </div>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Technocrack</h3>
+                  <p class="projects__text">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
                 <img
-                  src="images/project_1.jpg"
-                  alt="Laptop wyświetlający stronę internetową."
+                  src="images/project/project_2.jpg"
+                  alt="Dwóch koszykarzy walczących o piłkę."
                   width="370px"
                   height="294px"
                   class="projects__img">
                 <div class="projects__overlay">
-                  <p class="projects__overlay-text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
+                  <p class="projects__overlay-text">Wprowadzamy Cię w świat koszykówki z naszym dynamicznym dziełem "New Orlean vs Golden Star". Ta grafika przenosi atmosferę dwóch ikonicznych klubów koszykarskich, zapalając pasję i intrygującym historią rywalizacji.</p>
                 </div>
               </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Technocrack</h3>
-                <p class="projects__text">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_2.jpg"
-                alt="Dwóch koszykarzy walczących o piłkę."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">W ciągu życia ludzkiego organizm produkuje tyle śliny, że wystarczyłoby, aby napełnić 2 baseny olimpijskie. Ślina pełni ważną rolę w trawieniu, nawilżaniu i oczyszczaniu jamy ustnej, a jej produkcja wynosi około 1-1,5 litra na dobę.</p>
-              </div>
-            </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Grafika New Orlean vs Golden Star</h3>
-                <p class="projects__text">Design</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_3.jpg"
-                alt="Nazwa restauracji z rybą w tle."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Człowiek jest jedynym ssakiem, który potrafi oddychać świadomie, czyli kontrolować swój oddech. Dzięki temu możemy zanurzać się pod wodą, wstrzymywać oddech w celu osiągnięcia lepszego wyniku w sporcie lub praktykować różne techniki relaksacyjne.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Grafika New Orlean vs Golden Star</h3>
+                  <p class="projects__text">Design</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_3.jpg"
+                  alt="Nazwa restauracji z rybą w tle."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Skorzystaj z wygody dostępu do najwykwintniejszych przysmaków z morza dzięki aplikacji Restauracja Seafood. Płynnie przeglądaj menu, dokonuj rezerwacji i rozkoszuj się doskonałą kuchnią, wszystko na wyciągnięcie ręki.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Restauracja Seafood</h3>
-                <p class="projects__text">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_4.jpg"
-                alt="Czarne słuchawki nauszne."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Wszystkie koty domowe, pochodzą od afrykańskiego kota Nubia. Nubiejskie koty były pierwotnie hodowane przez starożytnych Egipcjan, którzy uważali je za święte zwierzęta. Do dziś koty są jednymi z najpopularniejszych zwierząt domowych na świecie.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Restauracja Seafood</h3>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_4.jpg"
+                  alt="Czarne słuchawki nauszne."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Podnieś swoje doświadczenie słuchowe dzięki Project Prime, gdzie innowacyjne strategie marketingowe łączą się z najwyższą technologią słuchawkową. Pogrąż się w dźwięku jak nigdy dotąd.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Projekt Prime</h3>
-                <p class="projects__text">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_5.jpg"
-                alt="Dwa pudełka leżące obok siebie."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Wieloryby posiadają niesamowitą zdolność do zapamiętywania dźwięków i odgłosów z odległości nawet 1000 km. Słyszą one nie tylko dźwięki innych wielorybów, ale także fale oceaniczne, trzęsienia ziemi i odgłosy statków.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Projekt Prime</h3>
+                  <p class="projects__text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_5.jpg"
+                  alt="Dwa pudełka leżące obok siebie."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Uprość złożoności projektowania opakowań dzięki Project Boxes. Nasza intuicyjna aplikacja usprawnia proces, umożliwiając tworzenie oszałamiających projektów pudełek, które zachwycają i przekonują.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Projekt Boxes</h3>
-                <p class="projects__text">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_6.jpg"
-                alt="Monitor wyświetlający stronę internetową na ciemnym tle."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">W czasie swojego życia kolibrzyk może przefiltrować i wypompować nektar z kwiatów około miliona razy - to dzięki specjalnej strukturze języka, który składa się z mikroskopijnych rurek zakończonych pędzelkami, umożliwiającej pobieranie płynów.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Projekt Boxes</h3>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_6.jpg"
+                  alt="Monitor wyświetlający stronę internetową na ciemnym tle."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Wyzwalaj kreatywność i eksploruj bezgraniczną inspirację dzięki Inspiration has no Borders. Nasza strona internetowa celebruje uniwersalny język inspiracji, łącząc wizjonerów z całego świata.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Inspiration has no Borders</h3>
-                <p class="projects__text">Strona internetowa</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_7.jpg"
-                alt="Projekt stron w gazecie lub magazynie."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Krokodyle nie potrafią wysunąć języka. Większość gadów ma języki ruchome, ale u krokodyli język jest przymocowany do dna jamy ustnej, przez co nie potrafią go poruszać na boki czy wydłużać.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Inspiration has no Borders</h3>
+                  <p class="projects__text">Strona internetowa</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_7.jpg"
+                  alt="Projekt stron w gazecie lub magazynie."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Zanurz się w świat designu z Magazynem Limited Edition. Każdy numer to arcydzieło, kuratowane by inspirować i zachwycać miłośników sztuki, mody i kultury.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Magazyn Limited Edition</h3>
-                <p class="projects__text">Design</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_8.jpg"
-                alt="Biała metka z czarnym napisem, wisząca na sznurku."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Słońce jest ponad 300 000 razy cięższe od Ziemi, ale jednocześnie jest w 99,86% złożone z wodoru i helu - najlżejszych pierwiastków chemicznych.</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Magazyn Limited Edition</h3>
+                  <p class="projects__text">Design</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_8.jpg"
+                  alt="Biała metka z czarnym napisem, wisząca na sznurku."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Zamień zwykłe na niezwykłe dzięki Project LAB. Nasza marketingowa biegłość ożywia każdą etykietę, nadając markom wyraźną tożsamość, która przyciąga uwagę.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Project LAB</h3>
-                <p class="projects__text">Marketing</p>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="projects__card">
-            <figure class="projects__showcase">
-              <div class="projects__box">
-              <img
-                src="images/project_9.jpg"
-                alt="Laptop wyświetlający stronę internetową, na którym ktoś pisze."
-                width="370px"
-                height="294px"
-                class="projects__img">
-              <div class="projects__overlay">
-                <p class="projects__overlay-text">Wszystkie fascynujące fakty powyżej stworzył ChatGPT! 😅</p>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Project LAB</h3>
+                  <p class="projects__text">Marketing</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="projects__card">
+              <figure class="projects__showcase">
+                <div class="projects__box">
+                <img
+                  src="images/project/project_9.jpg"
+                  alt="Laptop wyświetlający stronę internetową, na którym ktoś pisze."
+                  width="370px"
+                  height="294px"
+                  class="projects__img">
+                <div class="projects__overlay">
+                  <p class="projects__overlay-text">Rozwijaj swoją firmę do nowych wysokości dzięki naszej aplikacji Growing Business. Od usprawniania operacji po poszerzanie zasięgu, wzmocnij swoje przedsiębiorstwo narzędziami zaprojektowanymi dla sukcesu.</p>
+                  </div>
                 </div>
-              </div>
-              <figcaption class="projects__description">
-                <h3 class="projects__title">Growing Business</h3>
-                <p class="projects__text">Aplikacja</p>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+                <figcaption class="projects__description">
+                  <h3 class="projects__title">Growing Business</h3>
+                  <p class="projects__text">Aplikacja</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
       </section>
   </main>
 
   <footer class="footer">
     <div class="container footer__content">
-      <div class="footer-main">
-        <div class="footer-main__logo">
-          <a href="index.html" id="kontakt" class="logo logo--alt">
-            <span class="logo__accent">Web</span>Studio</a
-          >
+      <div class="footer-wrapper">
+        <div class="footer-main">
+          <div class="footer-main__logo">
+            <a href="index.html" id="kontakt" class="logo logo--alt"> <span class="logo__accent">Web</span>Studio</a>
+          </div>
+
+          <ul class="footer-main__informations">
+            <li class="footer-main__info">
+              <address class="footer-main__address">m. Warszawa, Aleje Jerozolimskie 21</address>
+            </li>
+            <li class="footer-main__info">
+              <a href="mailto:info@example.com" class="footer-main__link">info@example.com</a>
+            </li>
+            <li class="footer-main__info">
+              <a href="tel:+48111111111" class="footer-main__link">+48 111 111 111</a>
+            </li>
+          </ul>
         </div>
 
-        <ul class="footer-main__informations">
-          <li class="footer-main__information">
-            <address class="footer-main__address">
-              m. Warszawa, Aleje Jerozolimskie 21
-            </address>
-          </li>
-          <li class="footer-main__information">
-            <a
-              href="mailto:info@example.com"
-              class="footer-main__link"
-              >info@example.com</a
-            >
-          </li>
-          <li class="footer-main__information">
-            <a href="tel:+48111111111" class="footer-main__link"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+        <div class="footer-links">
+          <h2 class="footer-links__title">Dołącz do nas</h2>
+          <ul class="footer-links__socials">
+            <li class="footer-links__buttons">
+              <a href="instagram.com" class="footer-links__link">
+                <svg class="footer-links__icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-links__buttons">
+              <a href="twitter.com" class="footer-links__link">
+                <svg class="footer-links__icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-links__buttons">
+              <a href="facebook.com" class="footer-links__link">
+                <svg class="footer-links__icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-links__buttons">
+              <a href="linked.in" class="footer-links__link">
+                <svg class="footer-links__icon" width="20" height="20">
+                  <use href="./images/icons/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-links">
-        <h2 class="footer-links__title">Dołącz do nas</h2>
-        <ul class="footer-links__socials">
-          <li class="footer-links__buttons">
-            <a href="instagram.com" class="footer-links__link">
-              <svg class="footer-links__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram-2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-links__buttons">
-            <a href="twitter.com" class="footer-links__link">
-              <svg class="footer-links__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-links__buttons">
-            <a href="facebook.com" class="footer-links__link">
-              <svg class="footer-links__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook-1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-links__buttons">
-            <a href="linked.in" class="footer-links__link">
-              <svg class="footer-links__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin-1"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="newsletter">
-        <form name="newsletter-form">
-
-          <label for="user_email" class="newsletter__title">
-            Zapisz się do newslettera
-          </label>
-
+      <div class="footer-newsletter">
+        <form name="newsletter" class="newsletter">
+          <label for="user_email" class="newsletter__title"> Zapisz się do newslettera </label>
+  
           <div class="newsletter__form">
-            <input id="user_email" type="email" name="email" placeholder="E-mail" class="newsletter__input">
-
+            <input id="user_email" type="email" name="email" placeholder="E-mail" class="newsletter__input" />
+  
             <button type="submit" class="newsletter__button">
               Zapisz się
               <svg width="24px" height="24px" class="newsletter__icon">
-                <use href="./images/icons.svg#icon-icon-send"></use>
+                <use href="./images/icons/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
           </div>
@@ -349,5 +428,6 @@
     </div>
   </footer>
 
+  <script src="js/mobile-menu.js"></script>
   </body>
 </html>
