@@ -10,7 +10,7 @@ After a few months, I refreshed the styles, repository, and added a Contact page
 
 ## Demo
 
-🔗 [Finished website](dag-szad.github.io/WebStudio/)
+🔗 [Finished website](https://dag-szad.github.io/WebStudio/)
 ## Tech Stack
 
 🔨 **HTML**, **CSS** with **SASS**, and a little bit of **Java Script**.
