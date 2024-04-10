@@ -50,7 +50,7 @@ After a few months, I refreshed the styles, repository, and added a Contact page
 ## Authors
 
 - Dag
-    - [Linkedin](www.linkedin.com/in/dagmara-szadkowska-708423255)
+    - [Linkedin](https:/www.linkedin.com/in/dagmara-szadkowska-708423255)
     - [GitHub](https://www.github.com/dag-szad)
 
 
