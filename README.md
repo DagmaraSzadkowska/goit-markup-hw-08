@@ -1,5 +1,5 @@
 
-![WebStudio Logo](images\docs\preview_logo.png)
+![WebStudio Logo](images/docs/preview_logo.png)
 
 # Non existing company portfolio
 
@@ -20,17 +20,17 @@ After a few months, I refreshed the styles, repository, and added a Contact page
 ## Screenshots
 
 ##### Main page
-![Main page banner](images\docs\preview_1.1.png)
-![Main page info](images\docs\preview_1.2.png)
-![Main page team and clients](images\docs\preview_1.2.png)
+![Main page banner](images/docs/preview_1.1.png)
+![Main page info](images/docs/preview_1.2.png)
+![Main page team and clients](images/docs/preview_1.2.png)
 
 ##### Portfolio page
-![Portfolio page layout and projects](images\docs\preview_2.1.png)
+![Portfolio page layout and projects](images/docs/preview_2.1.png)
 
 
 ##### Contact page
-![Contact page info](images\docs\preview_3.1.png)
-![Contact page form](images\docs\preview_3.2.png)
+![Contact page info](images/docs/preview_3.1.png)
+![Contact page form](images/docs/preview_3.2.png)
 
 ## Roadmap
 
