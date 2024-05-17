@@ -39,6 +39,7 @@ After a few months, I refreshed the styles, repository, and added a Contact page
 - ✅ **Pages HTML and basic styles** - All necessary HTML pages have been created with basic styling applied to ensure functionality.
 - ✅ **CSS optimization and fixes** - CSS files have been optimized for performance, and any existing issues have been resolved to improve user experience.
 - ✅ **Contact page with styles** - The Contact page has been implemented and styled to maintain consistency with the rest of the website.
+- ✅ **Accessibility Certification** - The website now provides accessibility features and complies with accessibility standards as confirmed by [accesScan report](https://acsbace.com/reports/6647614ee7ad6300031e6510?brandId=6647616f69edf500039fc158&_hsenc=p2ANqtz--D1uzLs6y74EJuua3bra7MaIY6134lR9FGmVGjpK9Pbf3nPWPqixO6dKhEoAq3DJ1T_3auaC04t4HwyIqnr7zrExw3-g&_hsmi=90649158).
 
 ##### To Do:
 
