@@ -1,0 +1,27 @@
+.skip-links {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.skip-link {
+  position: absolute;
+  background: var(--logo-color);
+  border-radius: 0 0 10px 10px;
+
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+
+  width: max-content;
+  padding: 20px;
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
