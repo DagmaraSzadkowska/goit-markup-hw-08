@@ -2009,4 +2009,36 @@ a {
 }
 .modal-form-button:hover, .modal-form-button:focus {
   background-color: var(--main-accent-hover);
+}
+
+.skip-links {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.skip-link {
+  position: absolute;
+  background: var(--logo-color);
+  border-radius: 0 0 10px 10px;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 20px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }/*# sourceMappingURL=main.min.css.map */
