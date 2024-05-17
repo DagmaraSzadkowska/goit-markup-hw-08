@@ -209,46 +209,43 @@
               <h2 class="contact-modal__title">Zostaw wiadomość w formularzu poniżej</h2>
               <form class="modal-form">
                 <div class="modal-form__left-side">
-                  <h3 class="modal-form__label">Komentarz</h3>
-                  <label name="comment" class="modal-form__label">
-                    <textarea
-                      name="comment"
-                      rows="5"
-                      placeholder="Wprowadź tekst"
-                      class="modal-form__comment-input"
-                    ></textarea>
-                  </label>
+                  <label for="comment" class="modal-form__label">Komentarz</label>
+                  <textarea
+                    id="comment"
+                    name="comment"
+                    rows="5"
+                    placeholder="Wprowadź tekst"
+                    class="modal-form__comment-input"
+                    aria-label="Komentarz"
+                  ></textarea>
                 </div>
 
                 <div class="modal-form__right-side">
-                  <h3 class="modal-form__label">Imię</h3>
+                  <label for="full-name" class="modal-form__label">Imię</label>
                   <label name="full-name" class="modal-form__short-input">
                     <svg class="modal-form__icon" width="18px" height="18px">
                       <use href="./images/icons/icons.svg#icon-person-black-18dp-1"></use>
                     </svg>
-                    <input name="full-name" class="modal-form__input" />
+                    <input id="full-name" name="full-name" class="modal-form__input" aria-label="Imię" />
                   </label>
 
-                  <h3 class="modal-form__label">Email</h3>
+                  <label for="email" class="modal-form__label">Email</label>
                   <label name="email" class="modal-form__short-input">
                     <svg class="modal-form__icon" width="18px" height="18px">
                       <use href="./images/icons/icons.svg#icon-email-black-18dp-1"></use>
                     </svg>
-                    <input name="email" class="modal-form__input" />
+                    <input id="email" name="email" class="modal-form__input" aria-label="Email" />
                   </label>
 
                   <div class="modal-checkbox">
                     <label class="modal-checkbox__container">
                       <input type="checkbox" class="modal-checkbox__input" />
-
                       <svg class="modal-checkbox__icon-before" width="16px" height="15px">
                         <use href="./images/icons/icons.svg#icon-empty-check"></use>
                       </svg>
-
                       <svg class="modal-checkbox__icon-after" width="16px" height="15px">
                         <use href="./images/icons/icons.svg#icon-filled-heck"></use>
                       </svg>
-
                       <p class="modal-checkbox__agreement">
                         Oświadczam iż akceptuję
                         <a href="" class="modal-checkbox__agreement-link">Regulamin</a>
