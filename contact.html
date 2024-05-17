@@ -30,6 +30,10 @@
           <a href="index.html" class="logo"> <span class="logo__accent">Web</span>Studio</a>
         </div>
 
+        <div class="skip-links">
+          <a href="#contact" class="skip-link">Przejdź do treści</a>
+        </div>
+
         <nav>
           <ul class="header__navigation">
             <li>
@@ -47,7 +51,7 @@
         <ul class="header__contact">
           <li class="header__side">
             <a href="mailto:info@devstudio.com" class="header__contact-link">
-              <svg class="header__icon">
+              <svg class="header__icon" role="presentation">
                 <use href="./images/icons/icons.svg#icon-envelope"></use>
               </svg>
               <span class="header__contact-text">info@devstudio.com</span>
@@ -55,7 +59,7 @@
           </li>
           <li class="header__side">
             <a href="tel:+48111111111" class="header__contact-link">
-              <svg class="header__icon">
+              <svg class="header__icon" role="presentation">
                 <use href="./images/icons/icons.svg#icon-smartphone"></use>
               </svg>
               <span class="header__contact-text">+48 111 111 111</span>
@@ -73,16 +77,17 @@
           class="mobile-header__button menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
+          aria-label="Otwórz menu mobilne"
         >
-          <svg class="mobile-header__button-icon" width="24px" height="16px">
+          <svg class="mobile-header__button-icon" width="24px" height="16px" role="img">
             <use href="./images/icons/menu-icon.svg#menu-icon"></use>
           </svg>
         </button>
       </div>
 
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-          <svg fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <button class="menu-toggle js-close-menu" aria-label="Zamknij menu mobilne">
+          <svg fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img">
             <path
               fill-rule="evenodd"
               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -114,21 +119,21 @@
 
         <ul class="menu-container__socials">
           <li>
-            <a href="https://instagram.com" class="menu-container__social-link">
+            <a href="https://https://www.instagram.com/" class="menu-container__social-link">
               Instagram
               <span class="menu-container__socials-accent">|</span>
             </a>
           </li>
 
           <li>
-            <a href="https://twitter.com" class="menu-container__social-link">
+            <a href="https://https://x.com/" class="menu-container__social-link">
               Twitter
               <span class="menu-container__socials-accent">|</span>
             </a>
           </li>
 
           <li>
-            <a href="https://facebook.com" class="menu-container__social-link">
+            <a href="https://https://www.facebook.com/" class="menu-container__social-link">
               Facebook
               <span class="menu-container__socials-accent">|</span>
             </a>
@@ -146,7 +151,7 @@
 
     <main>
       <section class="contact">
-        <div class="section contact-data">
+        <div class="section contact-data" id="contact">
           <h2 class="contact-data__title">Dane kontaktowe</h2>
           <div class="contact-data__content">
             <ul>
@@ -287,29 +292,29 @@
             <h2 class="footer-links__title">Dołącz do nas</h2>
             <ul class="footer-links__socials">
               <li class="footer-links__buttons">
-                <a href="instagram.com" class="footer-links__link">
-                  <svg class="footer-links__icon" width="20" height="20">
+                <a href="www.https://www.instagram.com/" class="footer-links__link" aria-label="Instagram">
+                  <svg class="footer-links__icon" width="20" height="20" role="presentation">
                     <use href="./images/icons/icons.svg#icon-instagram-2"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-links__buttons">
-                <a href="twitter.com" class="footer-links__link">
-                  <svg class="footer-links__icon" width="20" height="20">
+                <a href="https://x.com/" class="footer-links__link" aria-label="Twitter">
+                  <svg class="footer-links__icon" width="20" height="20" role="presentation">
                     <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-links__buttons">
-                <a href="facebook.com" class="footer-links__link">
-                  <svg class="footer-links__icon" width="20" height="20">
+                <a href="https://www.facebook.com/" class="footer-links__link" aria-label="Facebook">
+                  <svg class="footer-links__icon" width="20" height="20" role="presentation">
                     <use href="./images/icons/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="footer-links__buttons">
-                <a href="linked.in" class="footer-links__link">
-                  <svg class="footer-links__icon" width="20" height="20">
+                <a href="https://www.linkedin.com/" class="footer-links__link" aria-label="LinkedIn">
+                  <svg class="footer-links__icon" width="20" height="20" role="presentation">
                     <use href="./images/icons/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -327,7 +332,7 @@
 
               <button type="submit" class="newsletter__button">
                 Zapisz się
-                <svg width="24px" height="24px" class="newsletter__icon">
+                <svg width="24px" height="24px" class="newsletter__icon" role="presentation">
                   <use href="./images/icons/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
