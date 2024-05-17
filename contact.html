@@ -223,7 +223,7 @@
                 <div class="modal-form__right-side">
                   <label for="full-name" class="modal-form__label">Imię</label>
                   <label name="full-name" class="modal-form__short-input">
-                    <svg class="modal-form__icon" width="18px" height="18px">
+                    <svg class="modal-form__icon" width="18px" height="18px" role="presentation">
                       <use href="./images/icons/icons.svg#icon-person-black-18dp-1"></use>
                     </svg>
                     <input id="full-name" name="full-name" class="modal-form__input" aria-label="Imię" />
@@ -231,14 +231,14 @@
 
                   <label for="email" class="modal-form__label">Email</label>
                   <label name="email" class="modal-form__short-input">
-                    <svg class="modal-form__icon" width="18px" height="18px">
+                    <svg class="modal-form__icon" width="18px" height="18px" role="presentation">
                       <use href="./images/icons/icons.svg#icon-email-black-18dp-1"></use>
                     </svg>
                     <input id="email" name="email" class="modal-form__input" aria-label="Email" />
                   </label>
 
                   <div class="modal-checkbox">
-                    <label class="modal-checkbox__container">
+                    <label class="modal-checkbox__container" role="checkbox" aria-checked="false">
                       <input type="checkbox" class="modal-checkbox__input" />
                       <svg class="modal-checkbox__icon-before" width="16px" height="15px">
                         <use href="./images/icons/icons.svg#icon-empty-check"></use>
@@ -246,7 +246,7 @@
                       <svg class="modal-checkbox__icon-after" width="16px" height="15px">
                         <use href="./images/icons/icons.svg#icon-filled-heck"></use>
                       </svg>
-                      <p class="modal-checkbox__agreement">
+                      <p class="modal-checkbox__agreement" id="checkbox-label">
                         Oświadczam iż akceptuję
                         <a href="" class="modal-checkbox__agreement-link">Regulamin</a>
                         i
