@@ -44,8 +44,6 @@ After a few months, I refreshed the styles, repository, and added a Contact page
 ##### To Do:
 
 - ❌ **Project sorting and/or filtering on Portfolio page** - Implement functionality to allow users to sort or filter projects on the Portfolio page, enhancing usability and navigation.
-- ❌ **English translation** - Provide translations for content to cater to English-speaking users, broadening the accessibility of the website.
-- ❌ **Dark mode** - Introduce a dark mode option for users who prefer a darker color scheme, offering a more customizable and inclusive browsing experience.
 
 
 ## Authors
